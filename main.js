@@ -58,3 +58,29 @@ document.addEventListener('click', function (event) {
         menuOpcionesForm.style.display = 'none';
     }
 });
+
+
+//interacciones de botones y su filtrado
+
+var botonMostrarTodo = document.getElementById('boton-mostrar-todo');
+var botonDiseñoWeb = document.getElementById('boton-diseño-web');
+var diseñoWeb = document.getElementById('diseño-web');
+var botonDiseñoGrafico = document.getElementById('boton-diseño-grafico');
+var diseñoGrafico = document.getElementById('diseño-grafico');
+
+botonMostrarTodo.addEventListener('click', function () {
+    diseñoWeb.style.display = 'flex';
+    diseñoGrafico.style.display = 'flex';
+});
+
+botonDiseñoWeb.addEventListener('click', function () {
+    diseñoGrafico.style.display = 'none';
+    diseñoWeb.style.display = 'flex';
+});
+
+botonDiseñoGrafico.addEventListener('click', function () {
+    diseñoWeb.style.display = 'none';
+    diseñoGrafico.style.display = 'flex';
+});
+
+

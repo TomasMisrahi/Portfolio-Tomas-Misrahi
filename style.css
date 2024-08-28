@@ -186,13 +186,9 @@ header {
     padding: 100px 0px;
 }
 
-.div-cards-mis-servicios {
-    display: flex;
-    justify-content: center;
-}
-
 .zonas-cards-mis-servicios {
     display: flex;
+    justify-content: center;
     gap: 30px;
     padding: 30px 0px 0px;
     text-align: center;
@@ -232,7 +228,7 @@ header {
 
 /*main section 3*/
 
-.div-input-radio {
+.input-radio {
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -241,12 +237,12 @@ header {
     gap: 30px;
 }
 
-.div-input-radio li {
+.input-radio li {
     display: flex;
     align-items: center;
 }
 
-.div-input-radio li input {
+.input-radio li input {
     appearance: none;
     width: 2em;
     height: 2em;
@@ -255,12 +251,12 @@ header {
     transition: .4s ease-in-out;
 }
 
-.div-input-radio li input:hover {
+.input-radio li input:hover {
     scale: 1.2;
     cursor: pointer;
 }
 
-.div-input-radio li .circulo-input-radio {
+.input-radio li .circulo-input-radio {
     position: relative;
     top: 0.01em;
     left: -1.1em;
@@ -272,48 +268,83 @@ header {
     transition: .4s ease-in-out;
 }
 
-.div-input-radio li input:checked {
+.input-radio li input:checked {
     box-shadow: none;
     border: 1px solid blueviolet;
 }
 
-.div-input-radio li input:checked + .circulo-input-radio {
+.input-radio li input:checked+.circulo-input-radio {
     transform: rotate(360deg);
     scale: 1;
 }
 
-.div-input-radio li label {
+.input-radio li label {
     opacity: 0.7;
 }
 
-.cards-portfolio {
-    margin-top: 50px;
-
-}
-
-.cards-portfolio-div-1 {
+.zona1-cards-portfolio,
+.zona2-cards-portfolio {
     display: flex;
     justify-content: center;
-    gap: 170px;
-    margin-bottom: 60px;
+    gap: 30px;
+    margin: 50px 0px;
 }
 
-.cards-portfolio-div-2 {
+.zona1-cards-portfolio div,
+.zona2-cards-portfolio div {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
 }
 
-.cards-portfolio div img {
-    width: 500px;
+.zona1-cards-portfolio div:hover img,
+.zona2-cards-portfolio div:hover img {
+    filter: opacity(0.6);
+}
+
+.zona1-cards-portfolio div:hover p,
+.zona2-cards-portfolio div:hover p {
+    display: block;
+}
+
+.zona1-cards-portfolio div img {
+    width: 400px;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.cards-portfolio div img:hover {
-    opacity: 0.9;
-    box-shadow: inset 10px 5px 5px gold;
+.zona2-cards-portfolio div img {
+    width: 400px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
 }
 
+.zona1-cards-portfolio div p {
+    display: none;
+    position: absolute;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+    font-style: italic;
+    text-shadow: 3px 3px 4px #000000;
+    width: 350px;
+    margin-left: 1%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.imagenes-smirnoff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagenes-smirnoff img:nth-child(2) {
+    width: 250px;
+
+}
 
 /*main section 4*/
 
