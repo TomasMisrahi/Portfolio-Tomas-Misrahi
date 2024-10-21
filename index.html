@@ -17,25 +17,21 @@
 <body>
     <header>
         <div class="header-1">
-            <a href="#">
-                <img src="./img/logo-tm.png" alt="Logo Tomas Misrahi" class="logo-tm">
-            </a>
-            <div class="textos-nav">
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#section-1">Sobre mi</a></li>
-                        <li><a href="#section-2">Servicios</a></li>
-                        <li><a href="#section-3">Portfolio</a></li>
-                        <li><a href="#section-4">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <a href="./pdf/CV-Tomas-Misrahi.pdf" target="_blank">
-                        <img src="./img/logo-descargar.png" alt="Logo-de-descargar">
-                        <p>Descargar CV</p>
-                    </a>
-                </div>
+            <img src="./img/logo-tm.png" alt="Logo Tomas Misrahi" class="logo-tm">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#section-1">Sobre mi</a></li>
+                    <li><a href="#section-2">Servicios</a></li>
+                    <li><a href="#section-3">Portfolio</a></li>
+                    <li><a href="#section-4">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="./pdf/CV-Tomas-Misrahi.pdf" target="_blank">
+                    <img src="./img/logo-descargar.png" alt="Logo-de-descargar">
+                    <p>Descargar CV</p>
+                </a>
             </div>
         </div>
         <div class="header-2">
@@ -90,7 +86,7 @@
                 <P>LO QUE HAGO</P>
                 <h2>Mis servicios</h2>
             </div>
-            <div class="zonas-cards-mis-servicios">
+            <div class="div-cards-mis-servicios">
                 <div class="cards-mis-servicios">
                     <img src="./img/foto-desarrollo-web.png" alt="imagen representativa del Desarrollo Web">
                     <h3>Diseño y Desarrollo Web</h3>
@@ -103,7 +99,7 @@
                     <img src="./img/foto-mantenimiento-web.png" alt="imagen representativa del Mantenimiento Web">
                     <h3>Mantenimiento Web</h3>
                     <p>Mantenimiento constante de la página web, tanto para la refacción de la misma como para
-                        la implentación, tanto a nivel funcional como estético.
+                        la implementación, desde lo funcional a lo estético.
                     </p>
                 </div>
                 <div class="cards-mis-servicios">
@@ -114,15 +110,12 @@
                         ello se requiere una solida configuración y optimización por detras.
                     </p>
                 </div>
-            </div>
-            <div class="zonas-cards-mis-servicios">
                 <div class="cards-mis-servicios">
                     <img src="./img/foto-diseño-grafico.png" alt="imagen representativa del Diseño Gráfico">
                     <h3>Diseño Gráfico</h3>
-                    <p>Con las herramientas de Adobe Photoshop y Premiere Pro tengo la
+                    <p>Con las herramientas de Adobe Photoshop y Adobe Illustrator tengo la
                         capacidad de ofrecer distintos componentes visuales como flyers, diseños de logos y
-                        otros materiales del branding, y a su vez componentes audiovisuales
-                        como animaciones y cortometrajes.
+                        otros materiales del branding.
                     </p>
                 </div>
                 <div class="cards-mis-servicios">
@@ -170,33 +163,49 @@
                 </ul>
             </div>
             <div class="cards-portfolio">
-                <div class="zona1-cards-portfolio" id="diseño-web">
+                <div class="zonas-cards-portfolio" id="diseño-web">
                     <div onclick="redirect(this)" data-url="https://decori.netlify.app/">
                         <img src="./img/foto-html-css.png" alt="">
-                        <p>En este proyecto trabajé con <span style="color: #544ae0">HTML</span>, <span style="color: #544ae0">CSS</span>, el preprocesador &nbsp;<span style="color: #544ae0">Sass</span>&nbsp;para generar un código
-                            CSS bien limpio y el framework <span style="color: #544ae0">Bootstrap</span> para agilizar el proceso de creación de los componentes</p>
-                            
+                        <p class="zcp-p1">En este proyecto trabajé con <span>HTML</span>, <span>CSS</span>, el
+                            preprocesador
+                            &nbsp;<span>Sass</span>&nbsp;para generar un código
+                            CSS bien limpio y el framework <span>Bootstrap</span> para agilizar
+                            el proceso de creación de los componentes</p>
                     </div>
                     <div onclick="redirect(this)" data-url="https://cafeina1.netlify.app">
                         <img src="./img/foto-javascript.png" alt="">
-                        <p>En este proyecto trabajé con HTML y CSS pero el foco principal fue <span style="color: #f4cd83;">JavaScript</span> para generar
-                            multiples sistemas de filtrado</p>
+                        <p class="zcp-p2">En este proyecto trabajé con HTML y CSS pero el foco principal fue
+                            <span>JavaScript</span>
+                            para generar multiples sistemas de filtrado
+                        </p>
                     </div>
                     <div onclick="redirect(this)" data-url="https://shustyle.netlify.app">
                         <img src="./img/foto-react.png" alt="">
-                        <p>En este proyecto trabajé con HTML y JavaScript pero el foco principal fue <span style="color: #599eff;">React + Vite</span>, donde junto a la biblioteca <span style="color: #599eff;">Chakra UI</span> y la base de datos <span style="color: #599eff;">Firebase</span> logré hacer un E-commerce funcional</p>
+                        <p class="zcp-p3">En este proyecto trabajé con HTML y JavaScript pero el foco principal fue
+                            <span>React +
+                                Vite</span>, donde junto a la biblioteca <span>Chakra UI</span> y la base de datos
+                            <span>Firebase</span> logré hacer un E-commerce funcional
+                        </p>
                     </div>
                 </div>
-                <div class="zona2-cards-portfolio" id="diseño-grafico">
+                <div class="zonas-cards-portfolio" id="diseño-grafico">
                     <div>
                         <img src="./img/landing-1-photoshop.jpg" alt="" id="myImg">
+                        <p class="zcp-p4">En este proyecto trabajé con <span>Adobe Photoshop</span> para diseñar
+                            una Landing Page de la Tienda del famoso juego Mobile Brawl Stars</p>
                     </div>
                     <div class="imagenes-smirnoff">
-                        <img src="./img/banner-1-photoshop.jpg" alt="" id="myImg">
+                        <div>
+                            <img src="./img/banner-1-photoshop.jpg" alt="" id="myImg">
+                            <p class="zcp-p5">En este proyecto trabajé con <span>Adobe Photoshop</span> para
+                                diseñar banners en distintos formatos inspirados en la lata Smirnoff lima-limon</p>
+                        </div>
                         <img src="./img/banner-2-photoshop.jpg" alt="" id="myImg">
                     </div>
                     <div>
                         <img src="./img/landing-2-photoshop.jpg" alt="" id="myImg">
+                        <p class="zcp-p4">En este proyecto trabajé con <span>Adobe Photoshop</span> para diseñar
+                            una Landing Page del Home de el famoso juego Mobile Brawl Stars</p>
                     </div>
                 </div>
             </div>
@@ -205,7 +214,7 @@
         <section id="section-4" class="margin-sections">
             <div class="titulos-sections">
                 <img src="./img/mini-sol.png" alt="un mini sol violeta">
-                <P>TENES ALGUNA CONSULTA?</P>
+                <P>TENÉS ALGUNA CONSULTA?</P>
                 <h2>Ponete en contacto!</h2>
             </div>
             <div class="zona-contacto">
@@ -236,10 +245,9 @@
                 <form class="formulario">
                     <input type="text" name="nombre" placeholder="Su nombre" maxlength="75" autocomplete="off" required>
                     <div class="formulario-mail-telefono">
-                        <input type="email" name="mail" placeholder="Su Mail" maxlength="35" autocomplete="off"
-                            required>
+                        <input type="email" name="mail" placeholder="Su Mail" maxlength="35" autocomplete="on" required>
                         <input type="tel" name="tel" placeholder="Su número de teléfono" maxlength="35"
-                            autocomplete="off" required>
+                            autocomplete="on" required>
                     </div>
                     <div class="menu-desplegable-form">
                         <div class="boton-desplegable-form">Seleccioná el/los servicios de interes

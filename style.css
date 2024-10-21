@@ -27,51 +27,47 @@ header {
 
 .header-1 {
     display: flex;
+    align-items: center;
 }
 
 .logo-tm {
     width: 90px;
-    margin-right: 165px;
 }
 
-.textos-nav {
+.header-1 nav ul {
     display: flex;
-    align-items: center;
-}
-
-.textos-nav nav ul {
-    display: flex;
-    gap: 30px;
+    gap: 40px;
     list-style: none;
+    margin: 0px 6vw 0px 8vw;
 }
 
-.textos-nav nav ul li a {
+.header-1 nav ul li a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
-.textos-nav ul li a:hover {
+.header-1 ul li a:hover {
     color: blueviolet;
 }
 
-.textos-nav div a {
+.header-1 div a {
     display: flex;
-    margin-left: 100px;
     padding: 15px 60px;
+    gap: 5px;
     border: 2px solid white;
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
-.textos-nav div a:hover {
+.header-1 div a:hover {
     background-color: #000312;
     border-color: blueviolet;
 }
 
-.textos-nav div a p {
+.header-1 div a p {
     font-size: 20px;
     color: white;
 }
@@ -79,6 +75,10 @@ header {
 .header-2 {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0vw 13vw;
+    margin: 0px 50px;
 }
 
 .textos-header-1 p {
@@ -126,10 +126,7 @@ header {
 }
 
 .imagen-tomas {
-    margin-top: 5px;
-    width: 700px;
-    max-width: 100%;
-    filter: grayscale(20%);
+    filter: grayscale(30%);
 }
 
 /*main section 1*/
@@ -157,14 +154,15 @@ header {
 .listado-info-personal {
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 60px;
     font-size: 20px;
-    margin: 50px 0px;
+    margin: 50px;
+    flex-wrap: wrap;
 }
 
 .listado-info-personal ul li {
     list-style: none;
-    padding: 23px 120px 23px 40px;
+    padding: 23px 90px 23px 40px;
     border-radius: 10px;
 }
 
@@ -173,25 +171,26 @@ header {
 }
 
 .listado-info-personal img {
-    max-width: 32%;
     border-radius: 10px;
     filter: grayscale(60%);
 }
+
 
 /*main section 2*/
 
 .section-2 {
     background-image: url("img/fondo-servicios.png");
     background-size: cover;
-    padding: 100px 0px;
+    padding: 100px 10%;
 }
 
-.zonas-cards-mis-servicios {
+.div-cards-mis-servicios {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     padding: 30px 0px 0px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .cards-mis-servicios {
@@ -282,56 +281,72 @@ header {
     opacity: 0.7;
 }
 
-.zona1-cards-portfolio,
-.zona2-cards-portfolio {
+.zonas-cards-portfolio {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 50px 0px;
+    gap: 50px;
+    margin: 50px;
+    flex-wrap: wrap;
 }
 
-.zona1-cards-portfolio div,
-.zona2-cards-portfolio div {
+.zonas-cards-portfolio div {
     display: flex;
     align-items: center;
-    transition: all 0.2s ease;
 }
 
-.zona1-cards-portfolio div:hover img,
-.zona2-cards-portfolio div:hover img {
-    filter: opacity(0.6);
-}
-
-.zona1-cards-portfolio div:hover p,
-.zona2-cards-portfolio div:hover p {
-    display: block;
-}
-
-.zona1-cards-portfolio div img {
+.zonas-cards-portfolio div img {
     width: 400px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.zona2-cards-portfolio div img {
-    width: 400px;
-    border-radius: 10px;
-    transition: all 0.2s ease;
+.zonas-cards-portfolio div:hover img {
+    filter: opacity(0.6);
 }
 
-.zona1-cards-portfolio div p {
-    display: none;
+.zonas-cards-portfolio div p {
     position: absolute;
     text-align: center;
     line-height: 1.5;
     font-size: 18px;
     font-style: italic;
-    text-shadow: 3px 3px 4px #000000;
     width: 350px;
     margin-left: 1%;
     cursor: pointer;
+    color: transparent;
     transition: all 0.2s ease;
+}
+
+.zonas-cards-portfolio div p span {
+    color: transparent;
+    transition: all 0.2s ease;
+}
+
+.zonas-cards-portfolio div:hover p {
+    display: block;
+    color: white;
+    text-shadow: 3px 3px 4px #000000;
+}
+
+.zonas-cards-portfolio div:hover .zcp-p1 span {
+    color: #544ae0;
+}
+
+.zonas-cards-portfolio div:hover .zcp-p2 span {
+    color: #f4cd83;
+}
+
+.zonas-cards-portfolio div:hover .zcp-p3 span {
+    color: #599eff;
+}
+
+.zonas-cards-portfolio div:hover .zcp-p4 span {
+    color: red;
+}
+
+.zonas-cards-portfolio div:hover .zcp-p5 span {
+    color: #80b801;
 }
 
 .imagenes-smirnoff {
@@ -343,7 +358,6 @@ header {
 
 .imagenes-smirnoff img:nth-child(2) {
     width: 250px;
-
 }
 
 /*main section 4*/
@@ -353,6 +367,8 @@ header {
     justify-content: center;
     align-items: center;
     margin: 50px 0px;
+    flex-wrap: wrap;
+    gap: 80px;
 }
 
 .cards-contacto {
@@ -402,11 +418,11 @@ header {
     display: flex;
     flex-direction: column;
     gap: 30px 0px;
-    margin-left: 70px;
     padding: 50px;
     background-color: #111425;
     border-radius: 20px;
     width: 800px;
+    max-width: 100%;
 }
 
 .formulario input {
@@ -425,25 +441,22 @@ header {
     display: flex;
 }
 
-/* .menu-desplegable-form {
-    display: inline-block;
-} */
-
 .boton-desplegable-form {
-    width: 100%;
-    padding: 5px 20px 20px;
+    position: relative;
+    padding: 20px;
     color: #757575;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 30px;
     text-align: start;
     cursor: pointer;
+
 }
 
 .boton-desplegable-form img {
-    position: relative;
-    top: 10px;
-    left: 350px;
+    position: absolute;
+    top: 25%;
+    left: 93%;
     width: 30px;
     rotate: 180deg;
     padding: 10px;
@@ -556,13 +569,11 @@ footer {
     align-items: center;
 }
 
-.footer-1 img {
-    width: 150px;
-}
-
 .footer-1 p {
     margin: 10px 0px 15px;
     font-size: 18px;
+    text-align: center;
+    width: 80vw;
 }
 
 .redes-sociales-footer {
@@ -602,7 +613,9 @@ footer {
 .copyright p {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 10px;
+    width: 80vw;
 }
 
 /* Flecha hacia arriba*/
@@ -645,7 +658,7 @@ footer {
 }
 
 .show .go-top-button {
-    animation: popup 0.3s ease-in-out;
+    animation: gtb 0.3s ease-in-out;
     width: 4.5rem;
     height: 4.5rem;
     z-index: 11;
@@ -655,7 +668,7 @@ footer {
     transform: translate(-50%, -50%) scale(1);
 }
 
-@keyframes popup {
+@keyframes gtb {
     0% {
         width: 0;
         height: 0;
