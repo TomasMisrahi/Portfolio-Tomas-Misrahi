@@ -18,20 +18,23 @@
     <header>
         <div class="header-1">
             <img src="./img/logo-tm.png" alt="Logo Tomas Misrahi" class="logo-tm">
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#section-1">Sobre mi</a></li>
-                    <li><a href="#section-2">Servicios</a></li>
-                    <li><a href="#section-3">Portfolio</a></li>
-                    <li><a href="#section-4">Contacto</a></li>
-                </ul>
-            </nav>
             <div>
-                <a href="./pdf/CV-Tomas-Misrahi.pdf" target="_blank">
-                    <img src="./img/logo-descargar.png" alt="Logo-de-descargar">
-                    <p>Descargar CV</p>
-                </a>
+                <img src="./img/menu-hamburguesa.png" alt="" class="menu-hamburguesa">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#section-1">Sobre mi</a></li>
+                        <li><a href="#section-2">Servicios</a></li>
+                        <li><a href="#section-3">Portfolio</a></li>
+                        <li><a href="#section-4">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="cv">
+                    <a href="./pdf/CV-Tomas-Misrahi.pdf" target="_blank">
+                        <img src="./img/logo-descargar.png" alt="Logo-de-descargar">
+                        <p>Descargar CV</p>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="header-2">
@@ -54,29 +57,45 @@
                     </a>
                 </div>
             </div>
-            <img src="./img/foto-tomas-misrahi.png" alt="foto de Tomas Misrahi" class="imagen-tomas">
+            <picture>
+                <source srcset="./img/foto-tomas-misrahi-grande.png" media="(min-width: 695px)">
+                <img src="./img/foto-tomas-misrahi-mediana.png" alt="foto de Tomas Misrahi" class="imagen-tomas">
+            </picture>
         </div>
     </header>
 
     <main>
 
-        <section id="section-1" class="margin-sections">
+        <section class="margin-sections">
             <div class="titulos-sections">
                 <img src="./img/mini-sol.png" alt="un mini sol violeta">
                 <P>QUIÉN SOY</P>
                 <h2>Sobre mi resumen</h2>
             </div>
             <div class="listado-info-personal">
-                <ul>
-                    <li class="li-1">Edad:<span style="margin-left: 135px;">22</span></li>
-                    <li class="li-2">Residencia:<span style="margin-left: 80px;">Argentina</span></li>
-                    <li class="li-3">Ubicación:<span style="margin-left: 85px;"> Ciudad Autónoma de Buenos Aires</span>
-                    </li>
-                    <li class="li-4">Email:<span style="margin-left: 130px;">tomasmisrahi1@gmail.com</span></li>
-                    <li class="li-5">Teléfono:<span style="margin-left: 100px;">+54 9 11 5618-0707</span></li>
-                    <li class="li-6">Freelance:<span style="margin-left: 90px;">Disponible</span></li>
-                </ul>
-                <img src="./img/foto-sobre-mi.jpg" alt="">
+                <div>
+                    <ul>
+                        <li>Edad:</li>
+                        <li>Residencia:</li>
+                        <li>Ubicación:</li>
+                        <li>Email:</li>
+                        <li>Teléfono:</li>
+                        <li>Freelance:</li>
+                    </ul>
+                    <ul>
+                        <li>22</li>
+                        <li>Argentina</li>
+                        <li>Ciudad Autónoma de Buenos Aires</li>
+                        <li>tomasmisrahi1@gmail.com</li>
+                        <li>+54 9 11 5618-0707</li>
+                        <li>Disponible</li>
+                    </ul>
+                </div>
+                <picture>
+                    <source srcset="./img/foto-sobre-mi-grande.jpg" media="(min-width: 695px)">
+                    <source srcset="./img/foto-sobre-mi-mediana.jpg" media="(min-width: 500px)">
+                    <img src="./img/foto-sobre-mi-pequeña.jpg" alt="">
+                </picture>
             </div>
         </section>
 
@@ -137,7 +156,7 @@
             </div>
         </section>
 
-        <section id="section-3" class="margin-sections">
+        <section class="margin-sections">
             <div class="titulos-sections">
                 <img src="./img/mini-sol.png" alt="un mini sol violeta">
                 <P>COLECCIÓN DE MIS PROYECTOS</P>
@@ -211,18 +230,18 @@
             </div>
         </section>
 
-        <section id="section-4" class="margin-sections">
+        <section class="margin-sections">
             <div class="titulos-sections">
                 <img src="./img/mini-sol.png" alt="un mini sol violeta">
-                <P>TENÉS ALGUNA CONSULTA?</P>
-                <h2>Ponete en contacto!</h2>
+                <P>¿TENÉS ALGUNA CONSULTA?</P>
+                <h2>¡Ponete en contacto!</h2>
             </div>
             <div class="zona-contacto">
                 <div class="cards-contacto">
                     <div data-url="mailto:tomasmisrahi1@gmail.com" onclick="redirect(this)">
                         <img src="./img/logo-correo.png" alt="logo de correo electrónico">
                         <div>
-                            <p>Mail</p>
+                            <p>Email</p>
                             <p>tomasmisrahi1@gmail.com</p>
                         </div>
                     </div>
@@ -243,11 +262,11 @@
                 </div>
 
                 <form class="formulario">
-                    <input type="text" name="nombre" placeholder="Su nombre" maxlength="75" autocomplete="off" required>
+                    <input type="text" name="nombre" placeholder="Nombre del cliente o empresa" maxlength="75"
+                        autocomplete="off" required>
                     <div class="formulario-mail-telefono">
-                        <input type="email" name="mail" placeholder="Su Mail" maxlength="35" autocomplete="on" required>
-                        <input type="tel" name="tel" placeholder="Su número de teléfono" maxlength="35"
-                            autocomplete="on" required>
+                        <input type="email" name="mail" placeholder="Email" maxlength="35" autocomplete="on" required>
+                        <input type="tel" name="tel" placeholder="Teléfono" maxlength="35" autocomplete="on" required>
                     </div>
                     <div class="menu-desplegable-form">
                         <div class="boton-desplegable-form">Seleccioná el/los servicios de interes
@@ -263,7 +282,7 @@
                             <li><label><input type="checkbox" value="checkbox6" />Marketing Digital</label></li>
                         </ul>
                     </div>
-                    <textarea name="mensaje" placeholder="Su mensaje" maxlength="657" required></textarea>
+                    <textarea name="mensaje" placeholder="Mensaje" maxlength="657" required></textarea>
                     <input type="submit" value="Enviar mensaje" required>
                 </form>
             </div>

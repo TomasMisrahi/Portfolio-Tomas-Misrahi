@@ -13,10 +13,10 @@ body {
     background-color: #040718;
 }
 
-/*header*/
+/* header */
 
 header {
-    padding-top: 40px;
+    padding-top: 2vw;
     background-image: url("img/fondo-header.png");
     background-position: left;
     background-size: cover;
@@ -30,31 +30,40 @@ header {
     align-items: center;
 }
 
+.header-1 div {
+    display: flex;
+    align-items: center;
+}
+
 .logo-tm {
     width: 90px;
 }
 
-.header-1 nav ul {
+.menu-hamburguesa {
+    display: none;
+}
+
+.header-1 div nav ul {
     display: flex;
     gap: 40px;
     list-style: none;
     margin: 0px 6vw 0px 8vw;
 }
 
-.header-1 nav ul li a {
+.header-1 div nav ul li a {
     font-size: 20px;
-    color: white;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
-.header-1 ul li a:hover {
+.header-1 div nav ul li a:hover {
     color: blueviolet;
 }
 
-.header-1 div a {
+.cv a {
     display: flex;
-    padding: 15px 60px;
+    align-items: center;
+    padding: 15px 40px;
     gap: 5px;
     border: 2px solid white;
     border-radius: 50px;
@@ -62,14 +71,13 @@ header {
     transition: all 0.2s ease;
 }
 
-.header-1 div a:hover {
+.cv a:hover {
     background-color: #000312;
     border-color: blueviolet;
 }
 
-.header-1 div a p {
+.cv a p {
     font-size: 20px;
-    color: white;
 }
 
 .header-2 {
@@ -77,32 +85,35 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0vw 13vw;
-    margin: 0px 50px;
+    gap: 0vw 9.3vw;
 }
 
 .textos-header-1 p {
-    font-size: 30px;
+    font-size: clamp(0.7rem, 2vw + 0.7rem, 1.88rem);
 }
 
 .textos-header-1 h1 {
-    font-size: 60px;
     margin: 10px 0px 5px;
+    font-size: clamp(1.5rem, 2vw + 1.5rem, 3.75rem);
+}
+
+.textos-header-1 h2 {
+    font-size: clamp(0.6rem, 2vw + 0.6rem, 1.5rem);
 }
 
 .textos-header-2 {
-    margin: 50px 0px 20px;
+    margin: 2.6vw 0px 20px;
 }
 
 .textos-header-2 a {
-    font-size: 30px;
+    font-size: clamp(0.7rem, 2vw + 0.7rem, 1.88rem);
     color: blueviolet;
     font-weight: bold;
 }
 
 .textos-header-2 p {
-    font-size: 20px;
-    margin: 15px 0px 40px;
+    font-size: clamp(0.5rem, 2vw + 0.5rem, 1.25rem);
+    margin: 0.8vw 0px 2vw;
     line-height: 30px;
 }
 
@@ -129,10 +140,10 @@ header {
     filter: grayscale(30%);
 }
 
-/*main section 1*/
+/* main section 1 */
 
 .margin-sections {
-    margin: 100px 0px;
+    margin: 6vw 0px;
 }
 
 .titulos-sections {
@@ -142,62 +153,73 @@ header {
 }
 
 .titulos-sections p {
-    font-size: 20px;
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1.25rem);
     margin: 20px 0px 10px;
     opacity: 0.7;
 }
 
 .titulos-sections h2 {
-    font-size: 50px;
+    font-size: clamp(1rem, 2vw + 1rem, 3.13rem);
 }
 
 .listado-info-personal {
     display: flex;
     justify-content: center;
     gap: 60px;
-    font-size: 20px;
-    margin: 50px;
+    font-size: clamp(0.35rem, 2vw + 0.35rem, 1.25rem);
+    margin: 3vw;
     flex-wrap: wrap;
 }
 
-.listado-info-personal ul li {
+.listado-info-personal div {
+    display: flex;
+}
+
+.listado-info-personal div ul:nth-child(odd) li {
+    padding-right: 0vw;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.listado-info-personal div ul:nth-child(even) li {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.listado-info-personal div ul li {
     list-style: none;
-    padding: 23px 90px 23px 40px;
+    padding: 23px 4.9vw 23px 2vw;
     border-radius: 10px;
 }
 
-.listado-info-personal ul li:nth-child(2n + 1) {
+.listado-info-personal div ul li:nth-child(2n + 1) {
     background-color: #111425;
 }
 
-.listado-info-personal img {
+.listado-info-personal picture img {
     border-radius: 10px;
     filter: grayscale(60%);
 }
 
-
-/*main section 2*/
+/* main section 2 */
 
 .section-2 {
     background-image: url("img/fondo-servicios.png");
     background-size: cover;
-    padding: 100px 10%;
+    padding: 6vw 4vw;
 }
 
 .div-cards-mis-servicios {
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 30px 0px 0px;
+    margin-top: 30px;
     text-align: center;
     flex-wrap: wrap;
 }
 
 .cards-mis-servicios {
     width: 400px;
-    height: 400px;
     background-color: #111425;
-    padding: 40px 50px 50px;
+    padding: 2vw;
     border-radius: 20px;
     transition: all 0.2s ease-in-out;
     cursor: default;
@@ -217,15 +239,16 @@ header {
 }
 
 .cards-mis-servicios h3 {
-    font-size: 25px;
+    font-size: clamp(0.8rem, 2vw + 0.8rem, 1.56rem);
     margin: 10px 0px 10px;
 }
 
 .cards-mis-servicios p {
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1rem);
     color: #949596;
 }
 
-/*main section 3*/
+/* main section 3 */
 
 .input-radio {
     margin-top: 20px;
@@ -239,6 +262,7 @@ header {
 .input-radio li {
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .input-radio li input {
@@ -279,6 +303,8 @@ header {
 
 .input-radio li label {
     opacity: 0.7;
+    font-size: clamp(0.3rem, 2vw + 0.3rem, 1rem);
+
 }
 
 .zonas-cards-portfolio {
@@ -360,15 +386,15 @@ header {
     width: 250px;
 }
 
-/*main section 4*/
+/* main section 4 */
 
 .zona-contacto {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0px;
+    margin: 50px;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 4vw;
 }
 
 .cards-contacto {
@@ -407,11 +433,12 @@ header {
 }
 
 .cards-contacto div div p:nth-child(1) {
-    font-size: 20px;
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1.25rem)
 }
 
 .cards-contacto div div p:nth-child(2) {
     color: #949596;
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1rem)
 }
 
 .formulario {
@@ -422,7 +449,6 @@ header {
     background-color: #111425;
     border-radius: 20px;
     width: 800px;
-    max-width: 100%;
 }
 
 .formulario input {
@@ -431,7 +457,7 @@ header {
     background-color: #111425;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 30px;
-    font-size: 15px;
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1rem);
     color: #949596;
 }
 
@@ -450,7 +476,7 @@ header {
     border-radius: 30px;
     text-align: start;
     cursor: pointer;
-
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1rem);
 }
 
 .boton-desplegable-form img {
@@ -485,7 +511,6 @@ header {
     z-index: 1;
     max-height: 190px;
     border-radius: 30px;
-
 }
 
 .menu-opciones-form li {
@@ -521,10 +546,11 @@ header {
 .formulario textarea {
     height: 200px;
     padding: 20px;
+    color: #757575;
     background-color: #111425;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 30px;
-    font-size: 15px;
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1rem);
     overflow: hidden;
     resize: none;
 }
@@ -534,7 +560,7 @@ header {
     border: none;
     background: linear-gradient(to bottom right, #8e36ef, #441adc);
     box-shadow: 0px 4px 0px #4a098b;
-    width: 33%;
+    width: 240px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -550,13 +576,13 @@ header {
     background-image: linear-gradient(to top left, #8e36ef, #441adc);
 }
 
-/*footer*/
+/* footer */
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 0px 60px;
+    margin: 3vw 0px 2.5vw;
     /* background-image: url("img/fondo-footer.jpg");
     background-position: bottom;
     background-size: cover; */
@@ -570,16 +596,14 @@ footer {
 }
 
 .footer-1 p {
-    margin: 10px 0px 15px;
-    font-size: 18px;
+    margin: 10px 5vw 15px;
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1.13rem);
     text-align: center;
-    width: 80vw;
 }
 
 .redes-sociales-footer {
     display: flex;
     justify-content: center;
-    max-width: 600px;
     gap: 30px;
     margin: 30px 0px;
     padding: 15px;
@@ -607,7 +631,7 @@ footer {
 
 .redes-sociales-footer p {
     margin-left: 10px;
-    font-size: 20px;
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1.25rem);
 }
 
 .copyright p {
@@ -616,9 +640,10 @@ footer {
     text-align: center;
     margin-top: 10px;
     width: 80vw;
+    font-size: clamp(0.3rem, 2vw + 0.3rem, 1rem);
 }
 
-/* Flecha hacia arriba*/
+/* Flecha hacia arriba */
 
 .go-top-container {
     position: fixed;
@@ -630,38 +655,35 @@ footer {
 }
 
 .go-top-button {
-    width: 0rem;
-    height: 0rem;
+    width: 0;
+    height: 0;
     background: #757575;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.2s;
     position: absolute;
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.go-top-button img {
-    position: absolute;
-    width: 25px;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: #fff;
     transition: 0.2s;
 }
 
+.go-top-button img {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s;
+}
+
 .show {
-    z-index: 10;
+    z-index: 2;
 }
 
 .show .go-top-button {
-    animation: gtb 0.3s ease-in-out;
     width: 4.5rem;
     height: 4.5rem;
-    z-index: 11;
+    animation: gtb 0.3s ease-in-out;
 }
 
 .show img {
@@ -682,5 +704,133 @@ footer {
     100% {
         width: 4.5rem;
         height: 4.5rem;
+    }
+}
+
+/* Responsive */
+
+@media all and (max-width: 1100px) {
+
+    .header-1 {
+        gap: 30vw;
+        align-items: start;
+        margin: 2vw 2vw 0vw;
+    }
+
+    .header-1 div {
+        flex-direction: column;
+        align-items: end;
+        gap: 40px;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .header-1 div nav ul {
+        flex-direction: column;
+        gap: 40px;
+        margin: 0px;
+        text-align: end;
+    }
+
+    .cv a {
+        margin-bottom: 100px;
+        padding: 15px 30px;
+        gap: 5px;
+    }
+
+    .header-2 {
+        gap: 0vw 13vw;
+        margin: 0px 50px;
+    }
+
+    .textos-header-1 {
+        text-align: center;
+    }
+
+    .textos-header-2 {
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+        margin-bottom: 5vw;
+    }
+
+    .go-top-container {
+        right: 3rem;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+
+    .input-radio li {
+        flex-direction: column;
+
+    }
+
+    .input-radio li .circulo-input-radio {
+        position: relative;
+        top: -1.1em;
+        left: 0em;
+        width: 0.6em;
+        height: 0.6em;
+    }
+
+    .formulario {
+        padding: 30px;
+    }
+
+    .boton-desplegable-form img {
+        left: 90%;
+    }
+
+    .go-top-container {
+        right: 2rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+
+    .header-1 div,
+    .header-1 div nav ul {
+        gap: 30px;
+    }
+
+    .header-1 div nav ul li a,
+    .cv a p {
+        font-size: 15px;
+    }
+
+    .cv a {
+        padding: 10px 20px;
+        gap: 5px;
+        border: 1px solid white;
+    }
+
+    .redes-sociales a img {
+        padding: 15px;
+    }
+
+    .cards-mis-servicios {
+        padding: 30px;
+    }
+
+    .input-radio {
+        gap: 10px;
+    }
+
+    .go-top-container {
+        right: 1rem;
+    }
+
+    .show .go-top-button {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
