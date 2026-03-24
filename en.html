@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="./assets/css/styles.css">
 <script src="./assets/js/tailwind-config.js"></script>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-white">
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-white overflow-x-hidden">
 
 <!-- Loader Overlay -->
 <div id="pageLoader" class="fixed inset-0 z-[100] flex justify-center items-center bg-background transition-opacity duration-500">
@@ -20,25 +20,35 @@
 
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-primary/10">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
-<span class="text-xl font-extrabold tracking-tighter text-white">Tomas Misrahi</span>
-<!-- Desktop Links -->
-<div class="hidden md:flex items-center gap-8 font-semibold tracking-tight text-sm">
-<a class="text-primary border-b-2 border-primary pb-1 transition-all" href="#about">About</a>
-<a class="text-on-surface-variant hover:text-white transition-colors" href="#services">Services</a>
-<a class="text-on-surface-variant hover:text-white transition-colors" href="#experience">Experience</a>
-<a class="text-on-surface-variant hover:text-white transition-colors" href="#portfolio">Case Studies</a>
-</div>
-<div class="flex items-center gap-6">
-<div class="flex items-center gap-2 font-label text-xs font-bold">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-5 md:px-8 py-4 md:py-5">
+
+<!-- Logo -->
+<a href="#" class="hidden md:flex flex-shrink-0 text-xl md:text-2xl font-extrabold tracking-tighter text-white whitespace-nowrap">
+    Tomas Misrahi
+</a>
+
+<!-- ES / EN (Left Mobile, Right Desktop) -->
+<div class="flex items-center gap-2 md:gap-3 font-label text-xs md:text-sm font-bold order-1 md:order-3">
 <a id="langToggle" class="text-on-surface-variant hover:text-white transition-colors" href="index.html">ES</a>
-<span class="text-outline">/</span>
+<span class="text-outline text-xs md:text-sm">/</span>
 <span class="text-primary">EN</span>
 </div>
-<a href="./assets/cv/cv-tomas-misrahi-digital-marketing.pdf" download class="bg-primary text-white px-6 py-2 rounded-full font-label text-sm font-bold hover:scale-105 transition-all shadow-lg shadow-primary/20 inline-block text-center cursor-pointer">
+
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8 font-semibold tracking-tight text-sm order-2 md:mx-auto">
+<a class="text-primary border-b-2 border-primary pb-1 transition-all" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-white transition-colors" href="#experience">Experience</a>
+<a class="text-on-surface-variant hover:text-white transition-colors" href="#portfolio">Case Studies</a>
+<a class="text-on-surface-variant hover:text-white transition-colors" href="#contact">Contact</a>
+</div>
+
+<!-- CV Button -->
+<div class="order-2 md:order-4 ml-auto md:ml-6 flex-shrink-0">
+<a href="./assets/cv/cv-tomas-misrahi-digital-marketing.pdf" download class="bg-primary text-white px-5 md:px-8 py-2 md:py-2.5 rounded-full font-label text-xs md:text-sm font-bold hover:scale-105 transition-all shadow-lg shadow-primary/20 inline-block text-center cursor-pointer whitespace-nowrap">
     Download CV
 </a>
 </div>
+
 </div>
 </nav>
 <main>
@@ -48,9 +58,9 @@
 <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10">
 <div class="order-2 lg:order-1">
 <h2 class="font-label text-primary font-bold tracking-widest uppercase mb-4 text-sm">Strategy &amp; Growth</h2>
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 leading-tight">
-                    Growth Marketer &amp; <br/>
-<span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-primary">Performance Specialist</span>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 mt-8 md:mt-0">
+Digital Marketing <br/>
+<span class="inline-block text-transparent bg-clip-text bg-gradient-to-r from-white via-tertiary to-primary pb-2">Specialist</span>
 </h1>
 <p class="text-on-surface-variant text-lg max-w-lg mb-8 leading-relaxed">
                     I blend business strategy with advanced technical implementation (Tracking, CRO, Analytics) to ensure every cent invested in paid media turns into tangible revenue.
@@ -67,21 +77,18 @@
 <span class="text-[10px] font-bold tracking-wider uppercase opacity-80">Google certifications</span>
 </a>
 </div>
-<div class="flex flex-wrap gap-4">
-<button class="bg-primary text-white px-8 py-4 rounded-full font-label font-bold flex items-center gap-2 glow-on-hover transition-all">
-                        See Results
+<div class="flex flex-wrap gap-4 mt-8">
+<a href="#portfolio" class="bg-primary text-white px-8 py-4 rounded-full font-label font-bold flex items-center gap-2 glow-on-hover transition-all hover:scale-[1.02] active:scale-95 inline-block cursor-pointer">
+                        Case Studies
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-<button class="px-8 py-4 rounded-full font-label font-bold border border-primary/30 hover:bg-primary/10 transition-all">
-                        Account Audit
-                    </button>
+</a>
 </div>
 </div>
-<div class="order-1 lg:order-2 flex justify-center lg:justify-end">
-<div class="relative" id="heroImageWrapper">
-<div id="heroGlow" class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full transition-all duration-700"></div>
-<div id="heroImageContainer" class="relative w-72 h-72 md:w-[450px] md:h-[450px] overflow-hidden rounded-xl border border-primary/20 p-2 transform -rotate-2 transition-transform duration-500">
-<img id="heroImage" alt="Tomas Misrahi" class="w-full h-full object-cover rounded-lg grayscale transition-all duration-700" src="./assets/img/foto-perfil-Tomas-Misrahi.png"/>
+<div class="order-1 lg:order-2 flex justify-start lg:justify-end">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+<div class="relative w-72 h-72 md:w-[450px] md:h-[450px] overflow-hidden rounded-xl border border-primary/20 p-2 shadow-2xl shadow-primary/20 bg-surface-variant">
+<img alt="Tomas Misrahi" class="w-full h-full object-cover rounded-lg block" src="./assets/img/foto-perfil-Tomas-Misrahi.png"/>
 </div>
 </div>
 </div>
@@ -350,10 +357,16 @@
 <span class="text-xs uppercase tracking-widest text-on-surface-variant/60">
             © Copyright 2026. All rights reserved — Tomas Misrahi
         </span>
-<div class="flex gap-8">
-<a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="https://www.linkedin.com/in/tomas-misrahi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-<a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="https://github.com/TomasMisrahi" target="_blank" rel="noopener noreferrer">GitHub</a>
-<a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="mailto:tomasmisrahi1@gmail.com?subject=Inquiry%20regarding%20Marketing%20Services&body=Hi%20Tomas!%20I%20saw%20your%20portfolio%20and%20I'd%20love%20to%20have%20a%20chat%20about%20your%20marketing%20services...%0A%0A">Email</a>
+<div class="flex justify-between w-full md:w-auto md:justify-end mt-4 md:mt-0 md:gap-8 items-center px-8 md:px-0">
+<a aria-label="LinkedIn" class="text-on-surface-variant hover:text-primary transition-colors transform hover:scale-110" href="https://www.linkedin.com/in/tomas-misrahi/" target="_blank" rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+<a aria-label="GitHub" class="text-on-surface-variant hover:text-primary transition-colors transform hover:scale-110" href="https://github.com/TomasMisrahi" target="_blank" rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+</a>
+<a aria-label="Email" class="text-on-surface-variant hover:text-primary transition-colors transform hover:scale-110 flex items-center" href="mailto:tomasmisrahi1@gmail.com?subject=Inquiry%20regarding%20Marketing%20Services&body=Hi%20Tomas!%20I%20saw%20your%20portfolio%20and%20I'd%20love%20to%20have%20a%20chat%20about%20your%20marketing%20services...%0A%0A">
+<span class="material-symbols-outlined text-[28px]">mail</span>
+</a>
 </div>
 </div>
 </footer>

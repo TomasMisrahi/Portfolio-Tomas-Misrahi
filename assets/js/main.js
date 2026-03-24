@@ -39,33 +39,4 @@ window.addEventListener('load', () => {
   }, 150);
 });
 
-// Hero image scroll effect
-const heroContainer = document.getElementById("heroImageContainer");
-const heroImg = document.getElementById("heroImage");
-const heroGlow = document.getElementById("heroGlow");
 
-if (heroContainer && heroImg && heroGlow) {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 20) {
-      // Glow
-      heroGlow.classList.remove("bg-primary/20");
-      heroGlow.classList.add("bg-primary/30");
-      // Container
-      heroContainer.classList.remove("-rotate-2");
-      heroContainer.classList.add("rotate-0");
-      // Image
-      heroImg.classList.remove("grayscale");
-      heroImg.classList.add("grayscale-0");
-    } else {
-      // Glow
-      heroGlow.classList.remove("bg-primary/30");
-      heroGlow.classList.add("bg-primary/20");
-      // Container
-      heroContainer.classList.remove("rotate-0");
-      heroContainer.classList.add("-rotate-2");
-      // Image
-      heroImg.classList.remove("grayscale-0");
-      heroImg.classList.add("grayscale");
-    }
-  });
-}
