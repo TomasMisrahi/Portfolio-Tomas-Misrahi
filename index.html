@@ -63,6 +63,12 @@
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-white">
+
+<!-- Loader Overlay -->
+<div id="pageLoader" class="fixed inset-0 z-[100] flex justify-center items-center bg-background transition-opacity duration-500">
+  <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-primary"></div>
+</div>
+
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-primary/10">
 <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
@@ -78,7 +84,7 @@
 <div class="flex items-center gap-2 font-label text-xs font-bold">
 <span class="text-primary">ES</span>
 <span class="text-outline">/</span>
-<a class="text-on-surface-variant hover:text-white transition-colors" href="en.html">EN</a>
+<a id="langToggle" class="text-on-surface-variant hover:text-white transition-colors" href="en.html">EN</a>
 </div>
 <a href="./assets/cv/cv-tomas-misrahi-marketing-digital.pdf" download class="bg-primary text-white px-6 py-2 rounded-full font-label text-sm font-bold hover:scale-105 transition-all shadow-lg shadow-primary/20 inline-block text-center cursor-pointer">
     Descargar CV
@@ -215,7 +221,9 @@
 <div class="relative flex flex-col md:flex-row items-start md:items-center">
 <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface transform -translate-x-1/2 z-10 shadow-[0_0_10px_rgba(90,0,255,0.8)]"></div>
 <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-<h4 class="font-label font-bold text-primary text-sm uppercase tracking-widest">Peterson Solutions</h4>
+<a href="https://www.linkedin.com/company/petersonsolutions/" target="_blank" rel="noopener noreferrer" class="inline-block font-label font-bold text-primary text-sm uppercase tracking-widest hover:text-white transition-colors">
+    Peterson Solutions <span class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
+</a>
 <p class="text-white font-semibold text-lg mt-1">Especialista en Marketing Digital</p>
 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">May 2025 - Presente</p>
 </div>
@@ -239,7 +247,9 @@
 </ul>
 </div>
 <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12 md:order-2 order-1">
-<h4 class="font-label font-bold text-primary text-sm uppercase tracking-widest">Squads Ventures</h4>
+<a href="https://www.linkedin.com/company/squads-ventures/" target="_blank" rel="noopener noreferrer" class="inline-block font-label font-bold text-primary text-sm uppercase tracking-widest hover:text-white transition-colors">
+    Squads Ventures <span class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
+</a>
 <p class="text-white font-semibold text-lg mt-1">Especialista en WordPress</p>
 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">Nov 2024 - May 2025</p>
 </div>
@@ -248,7 +258,9 @@
 <div class="relative flex flex-col md:flex-row items-start md:items-center">
 <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface transform -translate-x-1/2 z-10 shadow-[0_0_10px_rgba(90,0,255,0.8)]"></div>
 <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-<h4 class="font-label font-bold text-primary text-sm uppercase tracking-widest">J&amp;J Group</h4>
+<a href="https://www.linkedin.com/company/jjgroup-investments/" target="_blank" rel="noopener noreferrer" class="inline-block font-label font-bold text-primary text-sm uppercase tracking-widest hover:text-white transition-colors">
+    J&amp;J Group <span class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
+</a>
 <p class="text-white font-semibold text-lg mt-1">Analista Digital y de Negocio</p>
 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">Nov 2023 - Nov 2024</p>
 </div>
@@ -348,6 +360,29 @@
 <label for="email" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Correo</label>
 <input id="email" name="email" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="tu@empresa.com" type="email"/>
 </div>
+
+<div class="space-y-3">
+<label class="font-label text-xs uppercase tracking-widest text-primary font-bold">Servicios de Interés</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
+<input type="checkbox" name="servicios[]" value="Email Marketing & Automation" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Email Marketing &amp; Automation</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
+<input type="checkbox" name="servicios[]" value="Analítica Avanzada" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Analítica Avanzada</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
+<input type="checkbox" name="servicios[]" value="SEO & CRO" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">SEO &amp; CRO</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
+<input type="checkbox" name="servicios[]" value="Performance Paid Media" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Performance Paid Media</span>
+</label>
+</div>
+</div>
+
 <div class="space-y-2">
 <label for="mensaje" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Objetivo del Proyecto</label>
 <textarea id="mensaje" name="mensaje" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3 resize-none" placeholder="Contame un poco sobre tus objetivos y KPIs actuales..." rows="4"></textarea>
@@ -388,6 +423,34 @@
       }
     });
   }
+
+  // Memorizar posición de scroll al cambiar de idioma
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      sessionStorage.setItem('langScroll', window.scrollY);
+    });
+  }
+
+  window.addEventListener('load', () => {
+    const scrollPos = sessionStorage.getItem('langScroll');
+    if (scrollPos) {
+      const html = document.documentElement;
+      html.style.scrollBehavior = 'auto'; // Disable smooth scroll briefly
+      window.scrollTo(0, parseInt(scrollPos, 10));
+      sessionStorage.removeItem('langScroll');
+      setTimeout(() => { html.style.scrollBehavior = ''; }, 50);
+    }
+
+    // Ocultar Loader
+    setTimeout(() => {
+      const loader = document.getElementById('pageLoader');
+      if (loader) {
+        loader.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => { loader.style.display = 'none'; }, 500);
+      }
+    }, 150);
+  });
 </script>
 </body>
 </html>

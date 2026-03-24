@@ -63,6 +63,12 @@
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-white">
+
+<!-- Loader Overlay -->
+<div id="pageLoader" class="fixed inset-0 z-[100] flex justify-center items-center bg-background transition-opacity duration-500">
+  <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-primary"></div>
+</div>
+
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-primary/10">
 <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
@@ -76,7 +82,7 @@
 </div>
 <div class="flex items-center gap-6">
 <div class="flex items-center gap-2 font-label text-xs font-bold">
-<a class="text-on-surface-variant hover:text-white transition-colors" href="index.html">ES</a>
+<a id="langToggle" class="text-on-surface-variant hover:text-white transition-colors" href="index.html">ES</a>
 <span class="text-outline">/</span>
 <span class="text-primary">EN</span>
 </div>
@@ -215,7 +221,9 @@
 <div class="relative flex flex-col md:flex-row items-start md:items-center">
 <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface transform -translate-x-1/2 z-10 shadow-[0_0_10px_rgba(90,0,255,0.8)]"></div>
 <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-<h4 class="font-label font-bold text-primary text-sm uppercase tracking-widest">Peterson Solutions</h4>
+<a href="https://www.linkedin.com/company/petersonsolutions/" target="_blank" rel="noopener noreferrer" class="inline-block font-label font-bold text-primary text-sm uppercase tracking-widest hover:text-white transition-colors">
+    Peterson Solutions <span class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
+</a>
 <p class="text-white font-semibold text-lg mt-1">Digital Marketing Specialist</p>
 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">May 2025 - Present</p>
 </div>
@@ -239,7 +247,9 @@
 </ul>
 </div>
 <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12 md:order-2 order-1">
-<h4 class="font-label font-bold text-primary text-sm uppercase tracking-widest">Squads Ventures</h4>
+<a href="https://www.linkedin.com/company/squads-ventures/" target="_blank" rel="noopener noreferrer" class="inline-block font-label font-bold text-primary text-sm uppercase tracking-widest hover:text-white transition-colors">
+    Squads Ventures <span class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
+</a>
 <p class="text-white font-semibold text-lg mt-1">WordPress Specialist</p>
 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">Nov 2024 - May 2025</p>
 </div>
@@ -248,7 +258,9 @@
 <div class="relative flex flex-col md:flex-row items-start md:items-center">
 <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface transform -translate-x-1/2 z-10 shadow-[0_0_10px_rgba(90,0,255,0.8)]"></div>
 <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-<h4 class="font-label font-bold text-primary text-sm uppercase tracking-widest">J&amp;J Group</h4>
+<a href="https://www.linkedin.com/company/jjgroup-investments/" target="_blank" rel="noopener noreferrer" class="inline-block font-label font-bold text-primary text-sm uppercase tracking-widest hover:text-white transition-colors">
+    J&amp;J Group <span class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
+</a>
 <p class="text-white font-semibold text-lg mt-1">Digital &amp; Business Analyst</p>
 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">Nov 2023 - Nov 2024</p>
 </div>
@@ -325,41 +337,64 @@
 <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
-327: </svg>
-328: </div>
-329: <span class="font-label font-bold text-lg">+54 11 5618 0707</span>
-330: </a>
-331: </div>
-332: </div>
-333: <div class="glass-card p-10 rounded-xl">
-334: <form class="space-y-6" name="contacto" method="POST" data-netlify="true">
-335: <input type="hidden" name="form-name" value="contacto" />
-336: <div class="grid md:grid-cols-2 gap-6">
-337: <div class="space-y-2">
-338: <label for="nombre" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Name</label>
-339: <input id="nombre" name="nombre" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="Your name" type="text"/>
-340: </div>
-341: <div class="space-y-2">
-342: <label for="empresa" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Company</label>
-343: <input id="empresa" name="empresa" class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="Company Inc." type="text"/>
-344: </div>
-345: </div>
-346: <div class="space-y-2">
-347: <label for="email" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Email</label>
-348: <input id="email" name="email" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="you@company.com" type="email"/>
-349: </div>
-350: <div class="space-y-2">
-351: <label for="mensaje" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Project Goals</label>
-352: <textarea id="mensaje" name="mensaje" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3 resize-none" placeholder="Tell me a bit about your current goals and KPIs..." rows="4"></textarea>
-353: </div>
-354: <button class="w-full py-4 rounded-full bg-primary text-white font-label font-bold tracking-widest uppercase hover:scale-[1.02] transition-transform shadow-xl shadow-primary/30" type="submit">
-355:                         SEND MESSAGE
-356:                     </button>
-357: </form>
-358: </div>
-359: </div>
-360: </section>
-361: </main>
+</svg>
+</div>
+<span class="font-label font-bold text-lg">+54 11 5618 0707</span>
+</a>
+</div>
+</div>
+<div class="glass-card p-10 rounded-xl">
+<form class="space-y-6" name="contacto" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="contacto" />
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label for="nombre" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Name</label>
+<input id="nombre" name="nombre" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="Your name" type="text"/>
+</div>
+<div class="space-y-2">
+<label for="empresa" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Company</label>
+<input id="empresa" name="empresa" class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="Company Inc." type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label for="email" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Email</label>
+<input id="email" name="email" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="you@company.com" type="email"/>
+</div>
+
+<div class="space-y-3">
+<label class="font-label text-xs uppercase tracking-widest text-primary font-bold">Services of Interest</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
+<input type="checkbox" name="services[]" value="Email Marketing & Automation" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Email Marketing &amp; Automation</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
+<input type="checkbox" name="services[]" value="Advanced Analytics" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Advanced Analytics</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
+<input type="checkbox" name="services[]" value="SEO & CRO" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">SEO &amp; CRO</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
+<input type="checkbox" name="services[]" value="Performance Paid Media" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Performance Paid Media</span>
+</label>
+</div>
+</div>
+
+<div class="space-y-2">
+<label for="mensaje" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Project Goals</label>
+<textarea id="mensaje" name="mensaje" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3 resize-none" placeholder="Tell me a bit about your current goals and KPIs..." rows="4"></textarea>
+</div>
+<button class="w-full py-4 rounded-full bg-primary text-white font-label font-bold tracking-widest uppercase hover:scale-[1.02] transition-transform shadow-xl shadow-primary/30" type="submit">
+                        SEND MESSAGE
+                    </button>
+</form>
+</div>
+</div>
+</section>
+</main>
 <!-- Footer -->
 <footer class="w-full border-t border-primary/10 bg-background">
 <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 py-10 gap-6">
@@ -388,6 +423,34 @@
       }
     });
   }
+
+  // Memorizar posición de scroll al cambiar de idioma
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      sessionStorage.setItem('langScroll', window.scrollY);
+    });
+  }
+
+  window.addEventListener('load', () => {
+    const scrollPos = sessionStorage.getItem('langScroll');
+    if (scrollPos) {
+      const html = document.documentElement;
+      html.style.scrollBehavior = 'auto'; // Disable smooth scroll briefly
+      window.scrollTo(0, parseInt(scrollPos, 10));
+      sessionStorage.removeItem('langScroll');
+      setTimeout(() => { html.style.scrollBehavior = ''; }, 50);
+    }
+
+    // Hide Loader
+    setTimeout(() => {
+      const loader = document.getElementById('pageLoader');
+      if (loader) {
+        loader.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => { loader.style.display = 'none'; }, 500);
+      }
+    }, 150);
+  });
 </script>
 </body>
 </html>
