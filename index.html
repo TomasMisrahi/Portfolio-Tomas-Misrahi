@@ -1,66 +1,15 @@
 <!DOCTYPE html>
-
-<html class="dark scroll-smooth scroll-pt-24" lang="es"><head>
+<html lang="es" class="dark scroll-smooth bg-background">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="theme-color" content="#0A0514"/>
+<meta name="color-scheme" content="dark"/>
 <title>Tomas Misrahi | Especialista en Marketing Digital &amp; Performance</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#5A00FF",
-              "background": "#0A0514",
-              "surface": "#120B24",
-              "surface-variant": "#1A1133",
-              "on-surface": "#E1E2E7",
-              "on-surface-variant": "#CAC3DA",
-              "outline": "#484457",
-              "primary-container": "#5A00FF",
-              "secondary-container": "#2A1B4D",
-              "tertiary": "#CCBDFF"
-            },
-            fontFamily: {
-              "headline": ["Manrope", "sans-serif"],
-              "body": ["Manrope", "sans-serif"],
-              "label": ["Space Grotesk", "sans-serif"]
-            },
-            borderRadius: {
-              "DEFAULT": "0.5rem",
-              "lg": "0.75rem",
-              "xl": "1rem",
-              "full": "9999px"
-            },
-          },
-        },
-      }
-    </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      .glass-card {
-        background: rgba(26, 17, 51, 0.4);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(90, 0, 255, 0.15);
-      }
-      .glass-card:hover {
-        border-color: rgba(90, 0, 255, 0.4);
-        background: rgba(26, 17, 51, 0.6);
-      }
-      .hero-gradient {
-        background: radial-gradient(circle at 50% 50%, rgba(90, 0, 255, 0.1) 0%, transparent 70%);
-      }
-      .timeline-line {
-        background: linear-gradient(to bottom, #5A00FF 0%, rgba(90, 0, 255, 0.1) 100%);
-      }
-      .glow-on-hover:hover {
-        box-shadow: 0 0 20px rgba(90, 0, 255, 0.3);
-      }
-    </style>
+<link rel="stylesheet" href="./assets/css/styles.css">
+<script src="./assets/js/tailwind-config.js"></script>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-white">
 
@@ -129,10 +78,10 @@
 </div>
 </div>
 <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full group-hover:bg-primary/30 transition-all duration-700"></div>
-<div class="relative w-72 h-72 md:w-[450px] md:h-[450px] overflow-hidden rounded-xl border border-primary/20 p-2 transform -rotate-2 group-hover:rotate-0 transition-transform duration-500">
-<img alt="Tomas Misrahi" class="w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-700" src="./assets/img/foto-perfil-Tomas-Misrahi.png"/>
+<div class="relative" id="heroImageWrapper">
+<div id="heroGlow" class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full transition-all duration-700"></div>
+<div id="heroImageContainer" class="relative w-72 h-72 md:w-[450px] md:h-[450px] overflow-hidden rounded-xl border border-primary/20 p-2 transform -rotate-2 transition-transform duration-500">
+<img id="heroImage" alt="Tomas Misrahi" class="w-full h-full object-cover rounded-lg grayscale transition-all duration-700" src="./assets/img/foto-perfil-Tomas-Misrahi.png"/>
 </div>
 </div>
 </div>
@@ -411,46 +360,6 @@
 <a href="#" id="backToTop" aria-label="Volver arriba" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg shadow-primary/30 transform translate-y-20 opacity-0 transition-all duration-300 hover:scale-110 z-50 focus:outline-none flex justify-center items-center">
   <span class="material-symbols-outlined">expand_less</span>
 </a>
-<script>
-  // Back to top logic
-  const backToTopBtn = document.getElementById("backToTop");
-  if (backToTopBtn) {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        backToTopBtn.classList.remove("translate-y-20", "opacity-0");
-      } else {
-        backToTopBtn.classList.add("translate-y-20", "opacity-0");
-      }
-    });
-  }
-
-  // Memorizar posición de scroll al cambiar de idioma
-  const langToggle = document.getElementById('langToggle');
-  if (langToggle) {
-    langToggle.addEventListener('click', () => {
-      sessionStorage.setItem('langScroll', window.scrollY);
-    });
-  }
-
-  window.addEventListener('load', () => {
-    const scrollPos = sessionStorage.getItem('langScroll');
-    if (scrollPos) {
-      const html = document.documentElement;
-      html.style.scrollBehavior = 'auto'; // Disable smooth scroll briefly
-      window.scrollTo(0, parseInt(scrollPos, 10));
-      sessionStorage.removeItem('langScroll');
-      setTimeout(() => { html.style.scrollBehavior = ''; }, 50);
-    }
-
-    // Ocultar Loader
-    setTimeout(() => {
-      const loader = document.getElementById('pageLoader');
-      if (loader) {
-        loader.classList.add('opacity-0', 'pointer-events-none');
-        setTimeout(() => { loader.style.display = 'none'; }, 500);
-      }
-    }, 150);
-  });
-</script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
