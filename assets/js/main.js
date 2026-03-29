@@ -40,3 +40,38 @@ window.addEventListener('load', () => {
 });
 
 
+// Modal Logic
+window.openModal = function(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.querySelector('.transform').classList.remove('scale-95');
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+window.closeModal = function(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.querySelector('.transform').classList.add('scale-95');
+    document.body.style.overflow = '';
+  }
+};
+
+window.closeModalOutside = function(event, id) {
+  if (event.target.id === id) {
+    closeModal(id);
+  }
+};
+
+// Cierre de modal por tecla ECSAPE
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('[id^="modal-case-"]').forEach(modal => {
+      if (!modal.classList.contains('pointer-events-none')) {
+        closeModal(modal.id);
+      }
+    });
+  }
+});

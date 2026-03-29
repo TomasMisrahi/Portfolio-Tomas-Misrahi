@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7e3ff2" />
+      <stop offset="100%" stop-color="#4a00e0" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="150" fill="url(#bg)" />
+  <text x="50%" y="54%" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="bold" font-size="260" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" letter-spacing="-8">TM</text>
+</svg>

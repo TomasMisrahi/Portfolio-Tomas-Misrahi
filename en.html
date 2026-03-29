@@ -9,6 +9,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
 <script src="./assets/js/tailwind-config.js"></script>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-white overflow-x-hidden">
@@ -238,37 +239,47 @@ Digital Marketing <br/>
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 <div>
 <h2 class="font-headline text-5xl font-black tracking-tighter mb-4">Case Studies</h2>
-<p class="text-on-surface-variant">A dive into projects where we lowered Acquisition Costs and scaled revenue entirely backed by data.</p>
-</div>
-<a class="font-label text-primary font-bold border-b border-primary/30 pb-1 hover:border-primary transition-all" href="#">Download Reports</a>
-</div>
-<div class="grid md:grid-cols-2 gap-8">
-<!-- Project 1 -->
-<div class="group relative overflow-hidden rounded-xl bg-surface-variant border border-primary/10">
-<div class="aspect-video w-full overflow-hidden">
-<img alt="Financial Dashboard" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-50" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-</div>
-<div class="p-8 absolute bottom-0 left-0 w-full bg-gradient-to-t from-background to-transparent">
-<div class="flex gap-2 mb-4">
-<span class="bg-primary/20 text-primary px-3 py-1 rounded text-[10px] font-label tracking-widest uppercase">+45% ROI</span>
-<span class="bg-white/10 px-3 py-1 rounded text-[10px] font-label tracking-widest uppercase">Fintech</span>
-</div>
-<h3 class="text-2xl font-bold mb-2">Fintech App Campaign (Growth)</h3>
-<p class="text-on-surface-variant text-sm">Scaling user acquisition through hyper-segmented paid media strategies and holistic CRO funnels.</p>
+<p class="text-on-surface-variant">A look at the projects where we managed to lower the Customer Acquisition Cost and scale revenue based on data.</p>
 </div>
 </div>
-<!-- Project 2 -->
-<div class="group relative overflow-hidden rounded-xl bg-surface-variant border border-primary/10">
-<div class="aspect-video w-full overflow-hidden">
-<img alt="E-commerce Analytics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-50" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Case 1 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-variant border border-primary/10 flex flex-col h-full min-h-[360px]">
+<div class="absolute inset-0 w-full h-full overflow-hidden">
+<img alt="J&J Group Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-30" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 </div>
-<div class="p-8 absolute bottom-0 left-0 w-full bg-gradient-to-t from-background to-transparent">
-<div class="flex gap-2 mb-4">
-<span class="bg-primary/20 text-primary px-3 py-1 rounded text-[10px] font-label tracking-widest uppercase">-30% CPA</span>
-<span class="bg-white/10 px-3 py-1 rounded text-[10px] font-label tracking-widest uppercase">Retail</span>
+<div class="p-8 flex flex-col h-full absolute inset-0 z-10 justify-end bg-gradient-to-t from-background via-background/80 to-background/10">
+<p class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Company: J&amp;J Group</p>
+<h3 class="text-2xl font-bold mb-4 leading-tight">Multilingual Expansion &amp; Organic Acquisition</h3>
+<button onclick="openModal('modal-case-1')" class="mt-4 self-start text-xs font-bold text-white bg-primary/20 hover:bg-primary border border-primary/50 group-hover:border-primary px-5 py-2.5 rounded-full transition-all flex items-center gap-2">
+    View Case Study <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
 </div>
-<h3 class="text-2xl font-bold mb-2">E-commerce Scaling (Fashion)</h3>
-<p class="text-on-surface-variant text-sm">Aggressive checkout optimization and dynamic retargeting campaigns for an elite luxury fashion brand.</p>
+</div>
+<!-- Case 2 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-variant border border-primary/10 flex flex-col h-full min-h-[360px]">
+<div class="absolute inset-0 w-full h-full overflow-hidden">
+<img alt="Squads Ventures Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-30" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+</div>
+<div class="p-8 flex flex-col h-full absolute inset-0 z-10 justify-end bg-gradient-to-t from-background via-background/80 to-background/10">
+<p class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Company: Squads Ventures</p>
+<h3 class="text-2xl font-bold mb-4 leading-tight">E-E-A-T Development &amp; Internal Optimization</h3>
+<button onclick="openModal('modal-case-2')" class="mt-4 self-start text-xs font-bold text-white bg-primary/20 hover:bg-primary border border-primary/50 group-hover:border-primary px-5 py-2.5 rounded-full transition-all flex items-center gap-2">
+    View Case Study <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Case 3 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-variant border border-primary/10 flex flex-col h-full min-h-[360px]">
+<div class="absolute inset-0 w-full h-full overflow-hidden">
+<img alt="Peterson Solutions Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-30" src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+</div>
+<div class="p-8 flex flex-col h-full absolute inset-0 z-10 justify-end bg-gradient-to-t from-background via-background/80 to-background/10">
+<p class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Company: Peterson Solutions</p>
+<h3 class="text-2xl font-bold mb-4 leading-tight">Full-Funnel Automation &amp; Performance</h3>
+<button onclick="openModal('modal-case-3')" class="mt-4 self-start text-xs font-bold text-white bg-primary/20 hover:bg-primary border border-primary/50 group-hover:border-primary px-5 py-2.5 rounded-full transition-all flex items-center gap-2">
+    View Case Study <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
 </div>
 </div>
 </div>
@@ -374,5 +385,130 @@ Digital Marketing <br/>
   <span class="material-symbols-outlined">expand_less</span>
 </a>
 <script src="./assets/js/main.js"></script>
+
+<!-- Case Study Modals -->
+<!-- Modal 1 -->
+<div id="modal-case-1" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeModalOutside(event, 'modal-case-1')">
+    <div class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
+        <button onclick="closeModal('modal-case-1')" class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
+            <span class="material-symbols-outlined font-bold">close</span>
+        </button>
+        <div class="h-48 md:h-64 w-full overflow-hidden relative">
+            <img alt="J&J Group Project Banner" class="w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+        </div>
+        <div class="px-8 pb-10 pt-0 relative -top-12 md:-top-16">
+            <p class="text-primary text-sm font-bold tracking-widest uppercase mb-2">Company: J&amp;J Group</p>
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-8 text-white tracking-tighter leading-tight">Multilingual Expansion &amp; Organic Acquisition</h2>
+            
+            <div class="space-y-10">
+                <div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+                        <span class="material-symbols-outlined text-red-400">flag</span> The Challenge
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">The company needed to penetrate international markets and consolidate its digital presence, but organic traffic was stagnant and lead acquisition was limiting global growth.</p>
+                </div>
+                <div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+                        <span class="material-symbols-outlined text-primary">lightbulb</span> The Solution
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">We implemented a <strong>comprehensive technical SEO and omnichannel content strategy</strong>. The entire web architecture was restructured to support 4 languages (ES, EN, ZH, DE), paired with the consistent distribution of 20+ high-value content pieces across social media, analytically guided by GA4.</p>
+                </div>
+                <div class="bg-primary/10 border border-primary/20 rounded-xl p-8 relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+                        <span class="material-symbols-outlined text-[120px]">trending_up</span>
+                    </div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3 relative z-10">
+                        <span class="material-symbols-outlined text-green-400">trending_up</span> The Result
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed relative z-10">We achieved a <strong>sustained 40% growth</strong> in total monthly organic traffic volume, leading to a direct scale in qualified organic leads that positively impacted revenue.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal-case-2" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeModalOutside(event, 'modal-case-2')">
+    <div class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
+        <button onclick="closeModal('modal-case-2')" class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
+            <span class="material-symbols-outlined font-bold">close</span>
+        </button>
+        <div class="h-48 md:h-64 w-full overflow-hidden relative">
+            <img alt="Squads Ventures Project Banner" class="w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+        </div>
+        <div class="px-8 pb-10 pt-0 relative -top-12 md:-top-16">
+            <p class="text-primary text-sm font-bold tracking-widest uppercase mb-2">Company: Squads Ventures</p>
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-8 text-white tracking-tighter leading-tight">E-E-A-T Development for Clients &amp; Internal Web Optimization</h2>
+            
+            <div class="space-y-10">
+                <div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+                        <span class="material-symbols-outlined text-red-400">flag</span> The Challenge
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">We had the mission to operate on two critical fronts simultaneously: humanizing the brand and portfolio of external clients, and internally, drastically optimizing the security and load speed of 5 proprietary websites.</p>
+                </div>
+                <div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+                        <span class="material-symbols-outlined text-primary">lightbulb</span> The Solution
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">Externally, we developed <strong>over 30 biographical landing pages</strong> across multiple CMS platforms (WordPress, Webflow, etc.), reinforcing trust in client projects. Internally, we executed exhaustive technical WPO (Web Performance Optimization) audits alongside the deployment of advanced cybersecurity perimeters, including 2FA authentication and wp-admin obfuscation.</p>
+                </div>
+                <div class="bg-primary/10 border border-primary/20 rounded-xl p-8 relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+                        <span class="material-symbols-outlined text-[120px]">verified</span>
+                    </div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3 relative z-10">
+                        <span class="material-symbols-outlined text-green-400">trending_up</span> The Result
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed relative z-10">We successfully consolidated <strong>brand authority and E-E-A-T</strong> (Experience, Expertise, Authoritativeness, and Trustworthiness) for client projects. Internally, the digital ecosystem reduced its average load times by <strong>40% (from 5 to 3 seconds)</strong>, completely mitigating external bot attacks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal-case-3" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeModalOutside(event, 'modal-case-3')">
+    <div class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
+        <button onclick="closeModal('modal-case-3')" class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
+            <span class="material-symbols-outlined font-bold">close</span>
+        </button>
+        <div class="h-48 md:h-64 w-full overflow-hidden relative">
+            <img alt="Peterson Solutions Project Banner" class="w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+        </div>
+        <div class="px-8 pb-10 pt-0 relative -top-12 md:-top-16">
+            <p class="text-primary text-sm font-bold tracking-widest uppercase mb-2">Company: Peterson Solutions</p>
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-8 text-white tracking-tighter leading-tight">Full-Funnel Automation and Performance Management</h2>
+            
+            <div class="space-y-10">
+                <div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+                        <span class="material-symbols-outlined text-red-400">flag</span> The Challenge
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">The bottleneck for the marketing area lay in the operational difficulty of scaling B2B advertising investment, as well as resolving the significant technical friction present in lead qualification, scoring, and efficient follow-up as prospects moved through the funnel.</p>
+                </div>
+                <div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+                        <span class="material-symbols-outlined text-primary">lightbulb</span> The Solution
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">We took over the comprehensive management of hyper-segmented ad campaigns on Google and Meta Ads (investing budgets ranging from <strong>$500 to $5,000 USD/month</strong>). At the bottom of the funnel, we implemented an infrastructure to unify workflows in HubSpot, automating the capture and direct integration of 20+ forms.</p>
+                </div>
+                <div class="bg-primary/10 border border-primary/20 rounded-xl p-8 relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+                        <span class="material-symbols-outlined text-[120px]">target</span>
+                    </div>
+                    <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3 relative z-10">
+                        <span class="material-symbols-outlined text-green-400">trending_up</span> The Result
+                    </h3>
+                    <p class="text-on-surface-variant text-base md:text-lg leading-relaxed relative z-10">A drastic short-term improvement in the commercial quality and cleanliness of generated leads. The automation injected <strong>total visibility and trackability</strong> into the user lifecycle within the sales CRM, enabling a direct optimization of the ROI per account.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
