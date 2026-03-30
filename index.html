@@ -61,13 +61,14 @@
   </nav>
   <main>
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section class="min-h-screen flex items-center justify-center pt-32 pb-24 lg:pt-20 lg:pb-0 px-8 lg:px-0 bg-background relative overflow-hidden"
+      id="hero">
       <div class="absolute inset-0 hero-gradient"></div>
       <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div class="order-2 lg:order-1">
           <h2 class="font-label text-primary font-bold tracking-widest uppercase mb-4 text-sm">Estrategia &amp; Growth
           </h2>
-          <h1 class="font-headline text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 mt-8 md:mt-0">
+          <h1 class="font-headline text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 mt-8 md:mt-0 leading-[1.1]">
             Especialista en <br />
             <span
               class="inline-block text-transparent bg-clip-text bg-gradient-to-r from-white via-tertiary to-primary pb-2">Marketing
@@ -291,7 +292,7 @@
       <div class="max-w-7xl mx-auto px-8">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
-            <h2 class="font-headline text-5xl font-black tracking-tighter mb-4">Casos de Éxito</h2>
+            <h2 class="font-headline text-5xl font-black tracking-tighter leading-tight md:leading-none mb-4">Casos de Éxito</h2>
             <p class="text-on-surface-variant">Un vistazo a los proyectos donde logramos bajar el Costo de Adquisición y
               escalar la facturación con base en datos.</p>
           </div>
@@ -389,69 +390,44 @@
             <input type="hidden" name="form-name" value="contacto" />
             <div class="grid md:grid-cols-2 gap-6">
               <div class="space-y-2">
-                <label for="nombre"
-                  class="font-label text-xs uppercase tracking-widest text-primary font-bold">Nombre</label>
-                <input id="nombre" name="nombre" required
-                  class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3"
-                  placeholder="Tu nombre" type="text" />
+                <label for="nombre" class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Nombre</label>
+                <input id="nombre" name="nombre" required class="w-full bg-primary/10 border border-primary/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary focus:bg-primary/20 text-white placeholder:text-white/40 p-4 transition-all shadow-inner" placeholder="Tu nombre" type="text"/>
               </div>
               <div class="space-y-2">
-                <label for="empresa"
-                  class="font-label text-xs uppercase tracking-widest text-primary font-bold">Empresa</label>
-                <input id="empresa" name="empresa"
-                  class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3"
-                  placeholder="Empresa S.A." type="text" />
+                <label for="empresa" class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Empresa</label>
+                <input id="empresa" name="empresa" class="w-full bg-primary/10 border border-primary/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary focus:bg-primary/20 text-white placeholder:text-white/40 p-4 transition-all shadow-inner" placeholder="Empresa S.A." type="text"/>
               </div>
             </div>
             <div class="space-y-2">
-              <label for="email"
-                class="font-label text-xs uppercase tracking-widest text-primary font-bold">Correo</label>
-              <input id="email" name="email" required
-                class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3"
-                placeholder="tu@empresa.com" type="email" />
+              <label for="email" class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Correo</label>
+              <input id="email" name="email" required class="w-full bg-primary/10 border border-primary/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary focus:bg-primary/20 text-white placeholder:text-white/40 p-4 transition-all shadow-inner" placeholder="tu@empresa.com" type="email"/>
             </div>
 
             <div class="space-y-3">
-              <label class="font-label text-xs uppercase tracking-widest text-primary font-bold">Servicios de
-                Interés</label>
+              <label class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Servicios de Interés</label>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <label
-                  class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
-                  <input type="checkbox" name="servicios[]" value="Email Marketing & Automation"
-                    class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
-                  <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Email Marketing
-                    &amp; Automation</span>
+                <label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+                  <input type="checkbox" name="servicios" value="Email Marketing & Automation" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
+                  <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Email Marketing &amp; Automation</span>
                 </label>
-                <label
-                  class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
-                  <input type="checkbox" name="servicios[]" value="Analítica Avanzada"
-                    class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
-                  <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Analítica
-                    Avanzada</span>
+                <label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+                  <input type="checkbox" name="servicios" value="Analítica Avanzada" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
+                  <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Analítica Avanzada</span>
                 </label>
-                <label
-                  class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
-                  <input type="checkbox" name="servicios[]" value="SEO & CRO"
-                    class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
-                  <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">SEO &amp;
-                    CRO</span>
+                <label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+                  <input type="checkbox" name="servicios" value="SEO & CRO" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
+                  <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">SEO &amp; CRO</span>
                 </label>
-                <label
-                  class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
-                  <input type="checkbox" name="servicios[]" value="Performance Paid Media"
-                    class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
-                  <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Performance
-                    Paid Media</span>
+                <label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+                  <input type="checkbox" name="servicios" value="Performance Paid Media" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
+                  <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Performance Paid Media</span>
                 </label>
               </div>
             </div>
 
             <div class="space-y-2">
-              <label for="mensaje" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Objetivo
-                del Proyecto</label>
-              <textarea id="mensaje" name="mensaje" required
-                class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3 resize-none"
-                placeholder="Contame un poco sobre tus objetivos y KPIs actuales..." rows="4"></textarea>
+              <label for="mensaje" class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Objetivo del Proyecto</label>
+              <textarea id="mensaje" name="mensaje" required class="w-full bg-primary/10 border border-primary/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary focus:bg-primary/20 text-white placeholder:text-white/40 p-4 transition-all shadow-inner resize-none" placeholder="Contame un poco sobre tus objetivos y KPIs actuales..." rows="4"></textarea>
             </div>
             <button
               class="w-full py-4 rounded-full bg-primary text-white font-label font-bold tracking-widest uppercase hover:scale-[1.02] transition-transform shadow-xl shadow-primary/30"
@@ -466,10 +442,10 @@
   <!-- Footer -->
   <footer class="w-full border-t border-primary/10 bg-background">
     <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 py-10 gap-6">
-      <span class="text-xs uppercase tracking-widest text-on-surface-variant/60">
+      <span class="text-xs uppercase tracking-widest text-on-surface-variant/60 text-center md:text-left">
         © Copyright 2026. Todos los derechos reservados — Tomas Misrahi
       </span>
-      <div class="flex justify-between w-full md:w-auto md:justify-end mt-4 md:mt-0 md:gap-8 items-center px-8 md:px-0">
+      <div class="flex justify-center md:justify-end w-full md:w-auto gap-8 items-center">
         <a aria-label="LinkedIn"
           class="text-on-surface-variant hover:text-primary transition-colors transform hover:scale-110"
           href="https://www.linkedin.com/in/tomas-misrahi/" target="_blank" rel="noopener noreferrer">
@@ -499,7 +475,7 @@
     </div>
   </footer>
   <a href="#" id="backToTop" aria-label="Volver arriba"
-    class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg shadow-primary/30 transform translate-y-20 opacity-0 transition-all duration-300 hover:scale-110 z-50 focus:outline-none flex justify-center items-center">
+    class="fixed bottom-6 right-4 md:bottom-8 md:right-8 bg-primary text-white p-3 rounded-full shadow-lg shadow-primary/30 transform translate-y-20 opacity-0 transition-all duration-300 hover:scale-110 z-50 focus:outline-none flex justify-center items-center">
     <span class="material-symbols-outlined">expand_less</span>
   </a>
   <script src="./assets/js/main.js"></script>
@@ -512,7 +488,7 @@
     <div
       class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
       <button onclick="closeModal('modal-case-1')"
-        class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none"
+        class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none"
         aria-label="Cerrar modal">
         <span class="material-symbols-outlined font-bold">close</span>
       </button>
@@ -568,7 +544,7 @@
     <div
       class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
       <button onclick="closeModal('modal-case-2')"
-        class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none"
+        class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none"
         aria-label="Cerrar modal">
         <span class="material-symbols-outlined font-bold">close</span>
       </button>
@@ -627,7 +603,7 @@
     <div
       class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
       <button onclick="closeModal('modal-case-3')"
-        class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none"
+        class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none"
         aria-label="Cerrar modal">
         <span class="material-symbols-outlined font-bold">close</span>
       </button>

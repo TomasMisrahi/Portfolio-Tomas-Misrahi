@@ -54,8 +54,8 @@
 </nav>
 <main>
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-<div class="absolute inset-0 hero-gradient"></div>
+<section class="min-h-screen flex items-center justify-center pt-32 pb-24 lg:pt-20 lg:pb-0 px-8 lg:px-0 bg-background relative overflow-hidden" id="hero">
+<div class="absolute inset-0 z-0 hero-gradient"></div>
 <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10">
 <div class="order-2 lg:order-1">
 <h2 class="font-label text-primary font-bold tracking-widest uppercase mb-4 text-sm">Strategy &amp; Growth</h2>
@@ -238,7 +238,7 @@ Digital Marketing <br/>
 <div class="max-w-7xl mx-auto px-8">
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 <div>
-<h2 class="font-headline text-5xl font-black tracking-tighter mb-4">Case Studies</h2>
+<h2 class="font-headline text-5xl font-black tracking-tighter leading-tight md:leading-none mb-4">Case Studies</h2>
 <p class="text-on-surface-variant">A look at the projects where we managed to lower the Customer Acquisition Cost and scale revenue based on data.</p>
 </div>
 </div>
@@ -315,44 +315,44 @@ Digital Marketing <br/>
 <input type="hidden" name="form-name" value="contacto" />
 <div class="grid md:grid-cols-2 gap-6">
 <div class="space-y-2">
-<label for="nombre" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Name</label>
-<input id="nombre" name="nombre" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="Your name" type="text"/>
+<label for="nombre" class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Name</label>
+<input id="nombre" name="nombre" required class="w-full bg-primary/10 border border-primary/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary focus:bg-primary/20 text-white placeholder:text-white/40 p-4 transition-all shadow-inner" placeholder="Your name" type="text"/>
 </div>
 <div class="space-y-2">
-<label for="empresa" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Company</label>
-<input id="empresa" name="empresa" class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="Company Inc." type="text"/>
+<label for="empresa" class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Company</label>
+<input id="empresa" name="empresa" class="w-full bg-primary/10 border border-primary/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary focus:bg-primary/20 text-white placeholder:text-white/40 p-4 transition-all shadow-inner" placeholder="Company Inc." type="text"/>
 </div>
 </div>
 <div class="space-y-2">
-<label for="email" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Email</label>
-<input id="email" name="email" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3" placeholder="you@company.com" type="email"/>
+<label for="email" class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Email</label>
+<input id="email" name="email" required class="w-full bg-primary/10 border border-primary/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary focus:bg-primary/20 text-white placeholder:text-white/40 p-4 transition-all shadow-inner" placeholder="you@company.com" type="email"/>
 </div>
 
 <div class="space-y-3">
-<label class="font-label text-xs uppercase tracking-widest text-primary font-bold">Services of Interest</label>
+<label class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Services of Interest</label>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
-<input type="checkbox" name="services[]" value="Email Marketing & Automation" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="Email Marketing & Automation" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
 <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Email Marketing &amp; Automation</span>
 </label>
-<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
-<input type="checkbox" name="services[]" value="Advanced Analytics" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="Advanced Analytics" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
 <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Advanced Analytics</span>
 </label>
-<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
-<input type="checkbox" name="services[]" value="SEO & CRO" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="SEO & CRO" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
 <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">SEO &amp; CRO</span>
 </label>
-<label class="flex items-center gap-3 p-3 rounded-lg border border-primary/20 bg-background/50 hover:bg-primary/10 cursor-pointer transition-colors group">
-<input type="checkbox" name="services[]" value="Performance Paid Media" class="w-4 h-4 rounded border-outline bg-background text-primary focus:ring-primary/50 focus:ring-offset-background">
+<label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="Performance Paid Media" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
 <span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Performance Paid Media</span>
 </label>
 </div>
 </div>
 
 <div class="space-y-2">
-<label for="mensaje" class="font-label text-xs uppercase tracking-widest text-primary font-bold">Project Goals</label>
-<textarea id="mensaje" name="mensaje" required class="w-full bg-background/50 border-primary/20 rounded-lg focus:ring-2 focus:ring-primary/50 text-white placeholder:text-outline p-3 resize-none" placeholder="Tell me a bit about your current goals and KPIs..." rows="4"></textarea>
+<label for="mensaje" class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Project Goals</label>
+<textarea id="mensaje" name="mensaje" required class="w-full bg-primary/10 border border-primary/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary focus:bg-primary/20 text-white placeholder:text-white/40 p-4 transition-all shadow-inner resize-none" placeholder="Tell me a bit about your current goals and KPIs..." rows="4"></textarea>
 </div>
 <button class="w-full py-4 rounded-full bg-primary text-white font-label font-bold tracking-widest uppercase hover:scale-[1.02] transition-transform shadow-xl shadow-primary/30" type="submit">
                         SEND MESSAGE
@@ -365,10 +365,10 @@ Digital Marketing <br/>
 <!-- Footer -->
 <footer class="w-full border-t border-primary/10 bg-background">
 <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 py-10 gap-6">
-<span class="text-xs uppercase tracking-widest text-on-surface-variant/60">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant/60 text-center md:text-left">
             © Copyright 2026. All rights reserved — Tomas Misrahi
         </span>
-<div class="flex justify-between w-full md:w-auto md:justify-end mt-4 md:mt-0 md:gap-8 items-center px-8 md:px-0">
+<div class="flex justify-center md:justify-end w-full md:w-auto gap-8 items-center">
 <a aria-label="LinkedIn" class="text-on-surface-variant hover:text-primary transition-colors transform hover:scale-110" href="https://www.linkedin.com/in/tomas-misrahi/" target="_blank" rel="noopener noreferrer">
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
 </a>
@@ -381,7 +381,7 @@ Digital Marketing <br/>
 </div>
 </div>
 </footer>
-<a href="#" id="backToTop" aria-label="Volver arriba" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg shadow-primary/30 transform translate-y-20 opacity-0 transition-all duration-300 hover:scale-110 z-50 focus:outline-none flex justify-center items-center">
+<a href="#" id="backToTop" aria-label="Volver arriba" class="fixed bottom-6 right-4 md:bottom-8 md:right-8 bg-primary text-white p-3 rounded-full shadow-lg shadow-primary/30 transform translate-y-20 opacity-0 transition-all duration-300 hover:scale-110 z-50 focus:outline-none flex justify-center items-center">
   <span class="material-symbols-outlined">expand_less</span>
 </a>
 <script src="./assets/js/main.js"></script>
@@ -390,7 +390,7 @@ Digital Marketing <br/>
 <!-- Modal 1 -->
 <div id="modal-case-1" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeModalOutside(event, 'modal-case-1')">
     <div class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
-        <button onclick="closeModal('modal-case-1')" class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
+        <button onclick="closeModal('modal-case-1')" class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
             <span class="material-symbols-outlined font-bold">close</span>
         </button>
         <div class="h-48 md:h-64 w-full overflow-hidden relative">
@@ -431,7 +431,7 @@ Digital Marketing <br/>
 <!-- Modal 2 -->
 <div id="modal-case-2" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeModalOutside(event, 'modal-case-2')">
     <div class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
-        <button onclick="closeModal('modal-case-2')" class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
+        <button onclick="closeModal('modal-case-2')" class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
             <span class="material-symbols-outlined font-bold">close</span>
         </button>
         <div class="h-48 md:h-64 w-full overflow-hidden relative">
@@ -472,7 +472,7 @@ Digital Marketing <br/>
 <!-- Modal 3 -->
 <div id="modal-case-3" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeModalOutside(event, 'modal-case-3')">
     <div class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
-        <button onclick="closeModal('modal-case-3')" class="absolute top-4 right-4 text-white hover:text-primary transition-colors bg-background/50 border border-primary/30 p-2 rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
+        <button onclick="closeModal('modal-case-3')" class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none" aria-label="Close modal">
             <span class="material-symbols-outlined font-bold">close</span>
         </button>
         <div class="h-48 md:h-64 w-full overflow-hidden relative">
