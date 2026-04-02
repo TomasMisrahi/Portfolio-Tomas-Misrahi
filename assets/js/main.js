@@ -105,7 +105,7 @@ contactForms.forEach(form => {
         })
         .then(() => {
             // Estado Final (Éxito)
-            submitButton.innerHTML = `<span class="material-symbols-outlined mr-2">check_circle</span> ${textSuccess}`;
+            submitButton.innerHTML = `${textSuccess}`;
             submitButton.classList.replace('bg-primary', 'bg-green-600');
             submitButton.classList.replace('shadow-primary/30', 'shadow-green-600/30');
             submitButton.classList.remove('opacity-80', 'animate-pulse');
@@ -113,14 +113,14 @@ contactForms.forEach(form => {
             // Resetear inputs del form
             form.reset();
             
-            // Volver la UI del botón a la normalidad después de 4 segundos
+            // Volver la UI del botón a la normalidad después de 5 segundos
             setTimeout(() => {
                 submitButton.innerHTML = originalBtnText;
                 submitButton.classList.replace('bg-green-600', 'bg-primary');
                 submitButton.classList.replace('shadow-green-600/30', 'shadow-primary/30');
                 submitButton.disabled = false;
                 submitButton.classList.remove('cursor-not-allowed');
-            }, 4000);
+            }, 5000);
         })
         .catch((error) => {
             console.error('Error details:', error);
@@ -129,13 +129,13 @@ contactForms.forEach(form => {
             submitButton.classList.replace('bg-primary', 'bg-red-500');
             submitButton.classList.remove('opacity-80');
             
-            // Volver la UI a la normalidad después de 4 segundos
+            // Volver la UI a la normalidad después de 5 segundos
             setTimeout(() => {
                 submitButton.innerHTML = originalBtnText;
                 submitButton.classList.replace('bg-red-500', 'bg-primary');
                 submitButton.disabled = false;
                 submitButton.classList.remove('cursor-not-allowed');
-            }, 4000);
+            }, 5000);
         });
     });
 });
@@ -163,8 +163,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth',
                 block: 'start'
             });
-            // Opcional: Agregar el hash a la URL sin provocar salto brusco
-            history.pushState(null, null, targetId);
         }
     });
 });
