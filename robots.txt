@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Motores de Inteligencia Artificial (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://portfolio-tomas-misrahi.netlify.app/sitemap.xml
