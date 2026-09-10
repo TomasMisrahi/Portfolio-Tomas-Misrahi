@@ -183,6 +183,7 @@
         <a class="text-primary border-b-2 border-primary pb-1 transition-all" href="#services">Servicios</a>
         <a class="text-on-surface-variant hover:text-white transition-colors" href="#experience">Experiencia</a>
         <a class="text-on-surface-variant hover:text-white transition-colors" href="#portfolio">Casos de Éxito</a>
+        <a class="text-on-surface-variant hover:text-white transition-colors" href="#ai-solutions">Soluciones IA</a>
         <a class="text-on-surface-variant hover:text-white transition-colors" href="#contact">Contacto</a>
       </div>
 
@@ -488,8 +489,230 @@
         </div>
       </div>
     </section>
+
+    <!-- AI Solutions Section -->
+    <section class="py-24 bg-surface" id="ai-solutions">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div>
+            <div class="flex items-center gap-2 text-primary font-label text-xs font-bold tracking-widest uppercase mb-3">
+              <span class="material-symbols-outlined text-base">smart_toy</span>
+              Desarrollo &amp; Automatización IA
+            </div>
+            <h2 class="font-headline text-4xl md:text-5xl font-black tracking-tighter leading-tight md:leading-none mb-4">
+              Soluciones &amp; Herramientas IA
+            </h2>
+            <p class="text-on-surface-variant max-w-2xl text-base md:text-lg">
+              Plataformas y herramientas operativas diseñadas con Inteligencia Artificial para eliminar cuellos de botella, centralizar flujos de trabajo y potenciar el rendimiento de marketing.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1: MarComms Reports -->
+          <div class="glass-card rounded-2xl p-6 md:p-8 flex flex-col justify-between border border-primary/20 hover:border-primary/50 transition-all duration-300 group shadow-xl shadow-primary/5">
+            <div>
+              <!-- Video / Preview Container -->
+              <div class="w-full aspect-video rounded-xl bg-background/90 border border-primary/20 overflow-hidden relative mb-6 flex items-center justify-center group-hover:border-primary/40 transition-colors">
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline controls preload="metadata">
+                  <source src="assets/video/reportes-marcomms.mp4" type="video/mp4">
+                  Tu navegador no soporta reproducción de video.
+                </video>
+              </div>
+
+              <!-- Badges -->
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="text-[11px] font-label font-bold uppercase tracking-wider text-primary px-3 py-1 rounded-full bg-primary/10 border border-primary/30">
+                  Solución Interna
+                </span>
+                <span class="text-[11px] font-label font-semibold text-on-surface-variant/80">
+                  Peterson &amp; Control Union
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                MarComms Reports
+              </h3>
+
+              <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                Repositorio centralizado y dashboard web full-stack para agencia interna. Centraliza métricas y reportes de todos los pilares y subpilares con filtrado inteligente por cliente y descargas duales.
+              </p>
+
+              <!-- Features list -->
+              <div class="space-y-2 mb-6 text-xs text-on-surface-variant">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>Pilares &amp; Subpilares:</strong> Website (GA4 vs. SEO/GSC), Paid Media, Social y Mails.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>Descargas Duales:</strong> Reportes ejecutivos para clientes vs. vistas operativas internas.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>Stack Full-Stack:</strong> React 18, Supabase, Recharts, versionado en GitHub y Vercel.</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <!-- Stack Tags -->
+              <div class="flex flex-wrap gap-1.5 pt-4 border-t border-primary/10 mb-5">
+                <span class="px-2.5 py-1 text-[11px] font-mono font-bold rounded-md bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                  ⚡ Claude (Prompt Engineering)
+                </span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">React 18</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">Supabase</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">Vercel</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">GitHub</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">Recharts</span>
+              </div>
+
+              <button onclick="openModal('modal-tool-1')"
+                class="w-full py-3 rounded-xl bg-primary/20 hover:bg-primary text-white text-xs font-label font-bold tracking-wider uppercase border border-primary/40 hover:border-primary transition-all flex items-center justify-center gap-2">
+                Ver Detalles &amp; Arquitectura
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: B2B Prospecting & Outreach Hub -->
+          <div class="glass-card rounded-2xl p-6 md:p-8 flex flex-col justify-between border border-primary/20 hover:border-primary/50 transition-all duration-300 group shadow-xl shadow-primary/5">
+            <div>
+              <!-- Video / Preview Container -->
+              <div class="w-full aspect-video rounded-xl bg-background/90 border border-primary/20 overflow-hidden relative mb-6 flex items-center justify-center group-hover:border-primary/40 transition-colors">
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline controls preload="metadata">
+                  <source src="assets/video/b2b-prospecting-gemini.mp4" type="video/mp4">
+                  Tu navegador no soporta reproducción de video.
+                </video>
+              </div>
+
+              <!-- Badges -->
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="text-[11px] font-label font-bold uppercase tracking-wider text-primary px-3 py-1 rounded-full bg-primary/10 border border-primary/30">
+                  Solución Comercial
+                </span>
+                <span class="text-[11px] font-label font-semibold text-on-surface-variant/80">
+                  Prospección Outbound B2B
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                B2B Prospecting &amp; Outreach Hub
+              </h3>
+
+              <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                Template inteligente y personalizable con Gemini para procesar y entregar bases de datos comerciales B2B interactivas con filtros avanzados y copies de prospección multicanal listos para usar.
+              </p>
+
+              <!-- Features list -->
+              <div class="space-y-2 mb-6 text-xs text-on-surface-variant">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>Filtros Multi-Columna &amp; KPIs:</strong> Cargo/Rol, Empresa y País con métricas en vivo.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>Acceso Directo a LinkedIn &amp; CRM:</strong> Navegación ágil a perfiles de tomadores de decisión.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>Prospecting Templates IA:</strong> Textos para Cold Email, LinkedIn y WhatsApp listos para copiar.</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <!-- Stack Tags -->
+              <div class="flex flex-wrap gap-1.5 pt-4 border-t border-primary/10 mb-5">
+                <span class="px-2.5 py-1 text-[11px] font-mono font-bold rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                  ⚡ Gemini (Prompt Engineering)
+                </span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">HTML5 / JS ES6</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">Tailwind CSS</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">CRM Integration</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">Excel Export</span>
+              </div>
+
+              <button onclick="openModal('modal-tool-2')"
+                class="w-full py-3 rounded-xl bg-primary/20 hover:bg-primary text-white text-xs font-label font-bold tracking-wider uppercase border border-primary/40 hover:border-primary transition-all flex items-center justify-center gap-2">
+                Ver Detalles &amp; Arquitectura
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: MarComms Services Pricing Estimator -->
+          <div class="glass-card rounded-2xl p-6 md:p-8 flex flex-col justify-between border border-primary/20 hover:border-primary/50 transition-all duration-300 group shadow-xl shadow-primary/5">
+            <div>
+              <!-- Video / Preview Container -->
+              <div class="w-full aspect-video rounded-xl bg-background/90 border border-primary/20 overflow-hidden relative mb-6 flex items-center justify-center group-hover:border-primary/40 transition-colors">
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline controls preload="metadata">
+                  <source src="assets/video/cotizador-servicios-marcomms.mp4" type="video/mp4">
+                  Tu navegador no soporta reproducción de video.
+                </video>
+              </div>
+
+              <!-- Badges -->
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="text-[11px] font-label font-bold uppercase tracking-wider text-primary px-3 py-1 rounded-full bg-primary/10 border border-primary/30">
+                  Solución Operativa
+                </span>
+                <span class="text-[11px] font-label font-semibold text-on-surface-variant/80">
+                  Peterson &amp; Control Union
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                MarComms Pricing Estimator
+              </h3>
+
+              <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                Cotizador interactivo y estimador de servicios de marketing desarrollado con Gemini para agilizar el alcance presupuestario y eliminar cadenas interminables de emails comerciales.
+              </p>
+
+              <!-- Features list -->
+              <div class="space-y-2 mb-6 text-xs text-on-surface-variant">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>8 Pilares de Servicios:</strong> Diseño, Social, Paid Media, Web, CRM y Eventos.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>Cálculo Dinámico en Vivo:</strong> Rango mín/máx y promedio con barra fija de total.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  <span><strong>Términos &amp; Variables:</strong> Desglose transparente de costos, urgencias y descuentos.</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <!-- Stack Tags -->
+              <div class="flex flex-wrap gap-1.5 pt-4 border-t border-primary/10 mb-5">
+                <span class="px-2.5 py-1 text-[11px] font-mono font-bold rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                  ⚡ Gemini (Prompt Engineering)
+                </span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">HTML5 / JS ES6</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">Tailwind CSS</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">Pricing Engine</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-surface-variant text-on-surface-variant">Lucide Icons</span>
+              </div>
+
+              <button onclick="openModal('modal-tool-3')"
+                class="w-full py-3 rounded-xl bg-primary/20 hover:bg-primary text-white text-xs font-label font-bold tracking-wider uppercase border border-primary/40 hover:border-primary transition-all flex items-center justify-center gap-2">
+                Ver Detalles &amp; Arquitectura
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
-    <section class="py-24 bg-surface" id="contact">
+    <section class="py-24 bg-background" id="contact">
       <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16">
         <div>
           <h2 class="font-headline text-5xl font-black tracking-tighter mb-8">Impulsemos tu Crecimiento</h2>
@@ -780,6 +1003,287 @@
               corto plazo en la limpieza y calidad comercial de los leads generados. La automatización inyectó
               <strong>visibilidad total y seguimiento trazable</strong> del ciclo de vida del usuario optimizando
               directamente el ROI por cuenta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Herramienta 1: MarComms Reports -->
+  <div id="modal-tool-1"
+    class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+    onclick="closeModalOutside(event, 'modal-tool-1')">
+    <div
+      class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
+      <button onclick="closeModal('modal-tool-1')"
+        class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none"
+        aria-label="Cerrar modal">
+        <span class="material-symbols-outlined font-bold">close</span>
+      </button>
+      <div class="h-44 md:h-56 w-full overflow-hidden relative bg-gradient-to-r from-purple-900/40 via-primary/30 to-background flex items-center justify-center">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
+        <div class="flex items-center gap-3 z-10">
+          <span class="material-symbols-outlined text-5xl text-primary">bar_chart_4_bars</span>
+          <span class="font-headline text-3xl md:text-4xl font-black text-white tracking-tight">MarComms Reports</span>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+      </div>
+      <div class="px-8 pb-10 pt-0 relative -top-8 md:-top-10">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <span class="text-primary text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-primary/10 border border-primary/30">
+            Solución Interna · Peterson &amp; Control Union
+          </span>
+          <span class="text-xs font-mono font-bold text-purple-300 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/30">
+            ⚡ Desarrollado con Claude
+          </span>
+        </div>
+        <h2 class="text-2xl md:text-4xl font-extrabold mb-8 text-white tracking-tighter leading-tight">
+          Repositorio Full-Stack de Analytics &amp; Plataforma Centralizada de Reportes
+        </h2>
+
+        <!-- Preview Video Container -->
+        <div class="mb-8 rounded-xl overflow-hidden border border-primary/20 shadow-xl bg-background/80 aspect-video">
+          <video class="w-full h-full object-cover" autoplay loop muted playsinline controls preload="metadata">
+            <source src="assets/video/reportes-marcomms.mp4" type="video/mp4">
+            Tu navegador no soporta reproducción de video.
+          </video>
+        </div>
+
+        <div class="space-y-8">
+          <div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+              <span class="material-symbols-outlined text-red-400">flag</span> El Desafío
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">
+              La medición y seguimiento del impacto de marketing operaba de forma fragmentada entre canales aislados (Google Ads, Meta Ads, LinkedIn, GA4, Google Search Console, Mailchimp y Livestorm). Cada cuenta regional de Peterson Solutions &amp; Control Union requería reportes manuales inconexos, lo que ralentizaba la entrega, dificultaba cruzar datos entre distintas etapas del embudo y generaba fricción al no contar con un repositorio único donde el equipo interno y los decisores pudieran consultar el rendimiento histórico y actual.
+            </p>
+          </div>
+          <div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+              <span class="material-symbols-outlined text-primary">lightbulb</span> La Solución Desarrollada
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-4">
+              Mediante una metodología avanzada de <strong>Ingeniería de Prompts y desarrollo asistido con Claude</strong>, se diseñó e implementó desde cero una aplicación web completa en producción, integrada a un stack moderno con <strong>React 18 + Vite, Tailwind CSS, Recharts, base de datos en Supabase y CI/CD en GitHub y Vercel</strong>:
+            </p>
+            <ul class="space-y-2 text-on-surface-variant text-sm md:text-base ml-2">
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Repositorio Central de Agencia Interna:</strong> Punto de acceso unificado "todo en uno" donde el equipo puede consultar todas las métricas y reportes de todos los clientes y pilares en segundos.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Segmentación por Pilares &amp; Subpilares:</strong> Navegación jerárquica inteligente. Por ejemplo, en el pilar <i>Website</i> se diferencia la analítica general de tráfico (Google Analytics 4) del rendimiento orgánico (Google Search Console); en <i>Paid Media</i>, Google vs. Meta, etc.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Sistema de Descargas Duales (Internas vs. Externas):</strong> Capacidad de exportar reportes adaptados según la audiencia: la <i>descarga externa</i> ofrece un informe ejecutivo limpio y comprensible para el cliente, mientras que la <i>descarga interna</i> incluye variables operativas y desgloses analíticos para el equipo de marketing.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Filtros Dinámicos por Cliente y Fecha:</strong> Exploración ágil con vistas dedicadas por cuenta y combinador de reportes multi-canal para auditorías ejecutivas.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Visualización Interactiva con Recharts:</strong> Gráficos claros de evolución temporal, desglose de KPIs y glosarios técnicos estandarizados para garantizar fidelidad en los datos.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-primary/10 border border-primary/20 rounded-xl p-8 relative overflow-hidden">
+            <div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+              <span class="material-symbols-outlined text-[120px]">insights</span>
+            </div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3 relative z-10">
+              <span class="material-symbols-outlined text-green-400">trending_up</span> El Impacto
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed relative z-10">
+              Consolidación de un centro neurálgico de inteligencia y reporting para la agencia interna. Eliminó la dispersión de datos y el armado manual de planillas, acortando drásticamente los tiempos de entrega al cliente y dotando a la dirección de una visión transparente, comparable y en tiempo real del rendimiento global de marketing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Herramienta 2: B2B Prospecting & Outreach Hub -->
+  <div id="modal-tool-2"
+    class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+    onclick="closeModalOutside(event, 'modal-tool-2')">
+    <div
+      class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
+      <button onclick="closeModal('modal-tool-2')"
+        class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none"
+        aria-label="Cerrar modal">
+        <span class="material-symbols-outlined font-bold">close</span>
+      </button>
+      <div class="h-44 md:h-56 w-full overflow-hidden relative bg-gradient-to-r from-blue-900/40 via-primary/30 to-background flex items-center justify-center">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
+        <div class="flex items-center gap-3 z-10">
+          <span class="material-symbols-outlined text-5xl text-blue-400">table_chart_view</span>
+          <span class="font-headline text-3xl md:text-4xl font-black text-white tracking-tight">B2B Prospecting Hub</span>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+      </div>
+      <div class="px-8 pb-10 pt-0 relative -top-8 md:-top-10">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <span class="text-primary text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-primary/10 border border-primary/30">
+            Solución Comercial · Outbound B2B
+          </span>
+          <span class="text-xs font-mono font-bold text-blue-300 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-500/30">
+            ⚡ Desarrollado con Gemini
+          </span>
+        </div>
+        <h2 class="text-2xl md:text-4xl font-extrabold mb-8 text-white tracking-tighter leading-tight">
+          Template Inteligente de Activación de Bases de Datos &amp; Outreach Multicanal
+        </h2>
+
+        <!-- Preview Video Container -->
+        <div class="mb-8 rounded-xl overflow-hidden border border-primary/20 shadow-xl bg-background/80 aspect-video">
+          <video class="w-full h-full object-cover" autoplay loop muted playsinline controls preload="metadata">
+            <source src="assets/video/b2b-prospecting-gemini.mp4" type="video/mp4">
+            Tu navegador no soporta reproducción de video.
+          </video>
+        </div>
+
+        <div class="space-y-8">
+          <div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+              <span class="material-symbols-outlined text-red-400">flag</span> El Desafío
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">
+              La entrega de bases de datos de prospección B2B a equipos comerciales suele realizarse en hojas de cálculo extensas y densas (Excel/CSV). Esto genera una fuerte fricción operativa: los SDRs pierden tiempo filtrando y buscando manualmente los perfiles de LinkedIn de los decisores, la navegación es incómoda y cada comercial debe redactar sus propios mensajes en frío desde cero, generando inconsistencias en el mensaje de marca y reduciendo la tasa de contacto efectivo.
+            </p>
+          </div>
+          <div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+              <span class="material-symbols-outlined text-primary">lightbulb</span> La Solución Desarrollada con Gemini
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-4">
+              Mediante una metodología estructurada de <strong>Ingeniería de Prompts con Google Gemini</strong>, se creó un template inteligente y altamente personalizable. El flujo de trabajo permite al usuario simplemente <strong>pegar el listado de datos extraídos en Gemini</strong>, indicando el objetivo de la campaña y la empresa que se representará. Gemini genera de inmediato una aplicación web interactiva completa con:
+            </p>
+            <ul class="space-y-2 text-on-surface-variant text-sm md:text-base ml-2">
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Filtrado Dinámico Multi-Columna:</strong> Permite filtrar instantáneamente por Rol/Title del empleado (ej. Sostenibilidad, Operaciones, Compras), Empresa y País, con paginación y tarjetas de KPIs en vivo (contactos totales, LinkedIn profiles, empresas y países).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Acceso Directo a LinkedIn &amp; Enlace a CRM:</strong> Cada prospecto cuenta con un botón directo a su perfil de LinkedIn para prospección rápida, junto con acceso directo al CRM comercial.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Exportación Inteligente a Excel:</strong> Capacidad de exportar la base completa reflejando exactamente los filtros activos aplicados en el momento.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Módulo "Prospecting Templates" por Canal:</strong> Copies comerciales adaptados al nicho y listos para copiar con un clic para <strong>Cold Email</strong> (asunto + propuesta de valor), <strong>LinkedIn (mensaje de conexión)</strong> y <strong>Teléfono / WhatsApp</strong>.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Modo Claro / Oscuro:</strong> Interfaz con selector de tema visual para maximizar la comodidad del equipo de ventas durante jornadas intensivas de prospección.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-primary/10 border border-primary/20 rounded-xl p-8 relative overflow-hidden">
+            <div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+              <span class="material-symbols-outlined text-[120px]">groups</span>
+            </div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3 relative z-10">
+              <span class="material-symbols-outlined text-green-400">trending_up</span> El Impacto
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed relative z-10">
+              Acelera drásticamente la velocidad de prospección (SDR velocity). Transforma listas estáticas de contactos en una herramienta interactiva de habilitación de ventas en cuestión de minutos, eliminando el bloqueo creativo al redactar mensajes en frío y asegurando un abordaje comercial consistente, estructurado y de alto impacto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Herramienta 3: MarComms Services Pricing Estimator -->
+  <div id="modal-tool-3"
+    class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+    onclick="closeModalOutside(event, 'modal-tool-3')">
+    <div
+      class="bg-surface border border-primary/20 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-primary/10 relative transform scale-95 transition-transform duration-300">
+      <button onclick="closeModal('modal-tool-3')"
+        class="absolute top-4 right-4 text-white hover:text-white hover:scale-110 transition-all bg-background/80 border-2 border-primary shadow-lg shadow-primary/30 w-10 h-10 flex items-center justify-center rounded-full backdrop-blur z-20 focus:outline-none"
+        aria-label="Cerrar modal">
+        <span class="material-symbols-outlined font-bold">close</span>
+      </button>
+      <div class="h-44 md:h-56 w-full overflow-hidden relative bg-gradient-to-r from-emerald-900/40 via-primary/30 to-background flex items-center justify-center">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
+        <div class="flex items-center gap-3 z-10">
+          <span class="material-symbols-outlined text-5xl text-emerald-400">calculate</span>
+          <span class="font-headline text-3xl md:text-4xl font-black text-white tracking-tight">MarComms Estimator</span>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+      </div>
+      <div class="px-8 pb-10 pt-0 relative -top-8 md:-top-10">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <span class="text-primary text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-primary/10 border border-primary/30">
+            Solución Operativa · Peterson &amp; Control Union
+          </span>
+          <span class="text-xs font-mono font-bold text-blue-300 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-500/30">
+            ⚡ Desarrollado con Gemini
+          </span>
+        </div>
+        <h2 class="text-2xl md:text-4xl font-extrabold mb-8 text-white tracking-tighter leading-tight">
+          Cotizador Estimativo de Servicios de Marketing &amp; Comunicaciones
+        </h2>
+
+        <!-- Preview Video Container -->
+        <div class="mb-8 rounded-xl overflow-hidden border border-primary/20 shadow-xl bg-background/80 aspect-video">
+          <video class="w-full h-full object-cover" autoplay loop muted playsinline controls preload="metadata">
+            <source src="assets/video/cotizador-servicios-marcomms.mp4" type="video/mp4">
+            Tu navegador no soporta reproducción de video.
+          </video>
+        </div>
+
+        <div class="space-y-8">
+          <div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+              <span class="material-symbols-outlined text-red-400">flag</span> El Desafío
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">
+              La cotización y asignación presupuestaria de servicios de marketing entre múltiples departamentos regionales y clientes internos implicaba largas cadenas de correos electrónicos de ida y vuelta. Cada pedido requería cálculos manuales aislados, generaba demoras en la validación comercial y provocaba fricción por falta de transparencia sobre los factores que encarecen o abaratan un proyecto (entregas urgentes, complejidad técnica o idiomas adicionales).
+            </p>
+          </div>
+          <div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3">
+              <span class="material-symbols-outlined text-primary">lightbulb</span> La Solución Desarrollada con Gemini
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-4">
+              A través de <strong>Ingeniería de Prompts aplicada en Google Gemini</strong>, se diseñó e implementó un cotizador interactivo SPA en una sola página, permitiendo al cliente o stakeholder presupuestar en tiempo real sin intermediarios:
+            </p>
+            <ul class="space-y-2 text-on-surface-variant text-sm md:text-base ml-2">
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>8 Pilares Operativos Centralizados:</strong> Cobertura modular para Diseño Gráfico, Social Media, Eventos Presenciales, Eventos Virtuales (Webinars), Campañas &amp; Paid Media, CRM, Sitio Web &amp; SEO, Benchmarking y Reportes.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Motor de Precios Dinámicos en Tiempo Real:</strong> Inputs numéricos por servicio con cálculo automático de rango estimado (mínimo y máximo) y costo promedio global en una barra resumen fija (`sticky summary`).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Lógica Comercial de Descuentos Automáticos:</strong> Reglas comerciales inteligentes embebidas, como descuentos por volumen a partir de 3 correos en Email Marketing y tarifas segmentadas en Paid Media según canales activados (Search, PMax o 360°).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary text-base mt-1">check_circle</span>
+                <span><strong>Sublanding de Términos &amp; Variables:</strong> Módulo interactivo con navegación fluida que detalla transparentemente las condiciones que mueven el costo al mínimo o al máximo (urgencias/rush fee en &lt;48h, complejidad gráfica, locución, idiomas o proveedores externos).</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-primary/10 border border-primary/20 rounded-xl p-8 relative overflow-hidden">
+            <div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+              <span class="material-symbols-outlined text-[120px]">payments</span>
+            </div>
+            <h3 class="flex items-center gap-2 text-xl font-bold text-white mb-3 relative z-10">
+              <span class="material-symbols-outlined text-green-400">trending_up</span> El Impacto
+            </h3>
+            <p class="text-on-surface-variant text-base md:text-lg leading-relaxed relative z-10">
+              Elimina el cuello de botella en la negociación y cotización comercial. Los clientes y equipos internos pueden proyectar y planificar sus inversiones en segundos de manera autónoma, logrando total transparencia operativa y acortando los tiempos de aprobación y puesta en marcha de servicios.
             </p>
           </div>
         </div>
