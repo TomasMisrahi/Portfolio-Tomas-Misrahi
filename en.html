@@ -545,9 +545,9 @@ Interactive dashboard template engineered via prompt engineering with Gemini to 
 <span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
 <span><strong>Direct LinkedIn &amp; CRM Routing:</strong> Fast lookup of key decision-maker profiles for direct outreach.</span>
 </div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-<span><strong>AI Prospecting Scripts:</strong> Commercially ready to use.</span>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+<span><strong>AI Prospecting Scripts:</strong> Channel-ready messaging for Cold Email, LinkedIn notes, and WhatsApp, ready to copy and use commercially.</span>
 </div>
 </div>
 </div>
@@ -575,13 +575,12 @@ View Architecture &amp; Details
 <div class="glass-card rounded-2xl p-6 md:p-8 flex flex-col justify-between border border-primary/20 hover:border-primary/50 transition-all duration-300 group shadow-xl shadow-primary/5">
 <div>
 <!-- Video / Preview Container -->
-<div class="w-full aspect-video rounded-xl bg-background/90 border border-primary/20 overflow-hidden relative mb-2 flex items-center justify-center group-hover:border-primary/40 transition-colors">
+<div class="w-full aspect-video rounded-xl bg-background/90 border border-primary/20 overflow-hidden relative mb-6 flex items-center justify-center group-hover:border-primary/40 transition-colors">
 <video class="w-full h-full object-cover" autoplay loop muted playsinline controls preload="metadata">
 <source src="assets/video/cotizador-servicios-marcomms.mp4" type="video/mp4">
 Your browser does not support video playback.
 </video>
 </div>
-<p class="text-[11px] text-on-surface-variant/60 italic text-center mb-4">* Pricing figures and rates displayed in the demo are fictitious for illustrative purposes.</p>
 
 <!-- Badges -->
 <div class="mb-3">
@@ -683,21 +682,52 @@ View Architecture &amp; Details
 <div class="space-y-3">
 <label class="font-label text-sm uppercase tracking-widest text-primary font-bold ml-1">Services of Interest</label>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-<label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
-<input type="checkbox" name="servicios" value="Email Marketing & Automation" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
-<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Email Marketing &amp; Automation</span>
+<label class="flex items-start gap-3.5 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="AI Solutions &amp; Workflow Automation" class="w-4 h-4 mt-0.5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors cursor-pointer shrink-0">
+<div>
+<span class="block text-sm font-bold text-white group-hover:text-primary transition-colors">AI Solutions &amp; Workflow Automation</span>
+<span class="block text-[11px] text-on-surface-variant/80 mt-1 leading-snug">Interactive pricing tools, prompt engineering, and custom web apps with LLMs.</span>
+</div>
 </label>
-<label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
-<input type="checkbox" name="servicios" value="Advanced Analytics" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
-<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Advanced Analytics</span>
+
+<label class="flex items-start gap-3.5 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="B2B Prospecting &amp; Outbound Growth" class="w-4 h-4 mt-0.5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors cursor-pointer shrink-0">
+<div>
+<span class="block text-sm font-bold text-white group-hover:text-primary transition-colors">B2B Prospecting &amp; Outbound Growth</span>
+<span class="block text-[11px] text-on-surface-variant/80 mt-1 leading-snug">Lead list activation, decision-maker LinkedIn routing, and outreach scripts.</span>
+</div>
 </label>
-<label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
-<input type="checkbox" name="servicios" value="SEO & CRO" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
-<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">SEO &amp; CRO</span>
+
+<label class="flex items-start gap-3.5 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="Analytics Dashboards &amp; Reporting" class="w-4 h-4 mt-0.5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors cursor-pointer shrink-0">
+<div>
+<span class="block text-sm font-bold text-white group-hover:text-primary transition-colors">Analytics Dashboards &amp; Reporting</span>
+<span class="block text-[11px] text-on-surface-variant/80 mt-1 leading-snug">Multichannel metrics aggregation, real-time KPIs, and unified client reporting.</span>
+</div>
 </label>
-<label class="flex items-center gap-4 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
-<input type="checkbox" name="servicios" value="Performance Paid Media" class="w-5 h-5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors">
-<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Performance Paid Media</span>
+
+<label class="flex items-start gap-3.5 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="Performance Paid Media &amp; Scaling" class="w-4 h-4 mt-0.5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors cursor-pointer shrink-0">
+<div>
+<span class="block text-sm font-bold text-white group-hover:text-primary transition-colors">Performance Paid Media &amp; Scaling</span>
+<span class="block text-[11px] text-on-surface-variant/80 mt-1 leading-snug">High-ROI acquisition campaigns across Google Ads, Meta, and LinkedIn.</span>
+</div>
+</label>
+
+<label class="flex items-start gap-3.5 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="Technical SEO &amp; Web Architecture" class="w-4 h-4 mt-0.5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors cursor-pointer shrink-0">
+<div>
+<span class="block text-sm font-bold text-white group-hover:text-primary transition-colors">Technical SEO &amp; Web Architecture</span>
+<span class="block text-[11px] text-on-surface-variant/80 mt-1 leading-snug">International organic search rankings, CRO optimization, and Core Web Vitals.</span>
+</div>
+</label>
+
+<label class="flex items-start gap-3.5 p-4 rounded-xl border border-primary/30 bg-primary/10 hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all group">
+<input type="checkbox" name="servicios" value="Email Marketing &amp; CRM Automation" class="w-4 h-4 mt-0.5 rounded border-primary/50 bg-background text-primary focus:ring-primary focus:ring-offset-background transition-colors cursor-pointer shrink-0">
+<div>
+<span class="block text-sm font-bold text-white group-hover:text-primary transition-colors">Email Marketing &amp; CRM Automation</span>
+<span class="block text-[11px] text-on-surface-variant/80 mt-1 leading-snug">Automated nurturing funnels, lead scoring, and CRM pipeline integration.</span>
+</div>
 </label>
 </div>
 </div>
