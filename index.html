@@ -36,11 +36,22 @@
   <meta name="twitter:description" content="Servicios de Growth Marketing, Paid Media, CRO y Analítica Web por Tomas Misrahi." />
   <meta name="twitter:image" content="https://portfolio-tomas-misrahi.netlify.app/assets/img/foto-perfil-Tomas-Misrahi.png" />
 
-  <!-- Datos Estructurados Schema.org / JSON-LD (GEO & LLM Search Optimization) -->
+  <!-- Datos Estructurados Schema.org / JSON-LD (SEO, GEO & AEO Search Optimization) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://portfolio-tomas-misrahi.netlify.app/#profilepage",
+        "url": "https://portfolio-tomas-misrahi.netlify.app/",
+        "name": "Tomas Misrahi | Especialista en Marketing Digital, Performance & CRO",
+        "description": "Portfolio profesional, casos de éxito y soluciones de Inteligencia Artificial de Tomas Misrahi, especialista en Marketing Digital, CRO y Analítica Web.",
+        "inLanguage": "es",
+        "mainEntity": {
+          "@id": "https://portfolio-tomas-misrahi.netlify.app/#person"
+        }
+      },
       {
         "@type": "Person",
         "@id": "https://portfolio-tomas-misrahi.netlify.app/#person",
@@ -50,7 +61,7 @@
         "url": "https://portfolio-tomas-misrahi.netlify.app/",
         "image": "https://portfolio-tomas-misrahi.netlify.app/assets/img/foto-perfil-Tomas-Misrahi.png",
         "jobTitle": "Especialista en Marketing Digital & Performance",
-        "description": "Especialista en Marketing Digital orientado a performance, optimización de canales de conversión (CRO), analítica avanzada y gestión de campañas de pauta digital.",
+        "description": "Especialista en Marketing Digital orientado a performance, optimización de canales de conversión (CRO), analítica avanzada, base Full-Stack y automatización operativa con IA.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Villa Urquiza, Buenos Aires",
@@ -62,24 +73,35 @@
           "https://www.linkedin.com/in/tomas-misrahi/",
           "https://github.com/TomasMisrahi"
         ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Especialista en Marketing Digital & CRO",
+          "occupationLocation": {
+            "@type": "Country",
+            "name": "Worldwide"
+          },
+          "skills": "Performance Paid Media, Google Ads, Meta Ads, Conversion Rate Optimization (CRO), Google Analytics 4 (GA4), Google Tag Manager (GTM), HubSpot CRM, Prospección B2B, Inteligencia Artificial, Prompt Engineering (Claude & Gemini), Desarrollo Full-Stack"
+        },
         "knowsAbout": [
-          "Digital Marketing",
+          "Marketing Digital",
           "Performance Paid Media",
-          "Google Ads",
-          "Meta Ads",
+          "Google Ads & Meta Ads",
           "Conversion Rate Optimization (CRO)",
           "Google Analytics 4 (GA4)",
           "Google Tag Manager (GTM)",
+          "Inteligencia Artificial y Automatización",
+          "Prompt Engineering (Claude & Google Gemini)",
+          "Prospección B2B & Outbound Growth",
           "HubSpot & CRM Automation",
-          "SEO Técnico",
-          "Full Stack Web Development",
-          "WordPress & Webflow"
+          "SEO Técnico & WPO",
+          "Desarrollo Web Full-Stack",
+          "WordPress & Tailwind CSS"
         ]
       },
       {
         "@type": "ProfessionalService",
         "@id": "https://portfolio-tomas-misrahi.netlify.app/#service",
-        "name": "Tomas Misrahi - Marketing Digital & Growth",
+        "name": "Tomas Misrahi - Marketing Digital, Performance & Soluciones IA",
         "url": "https://portfolio-tomas-misrahi.netlify.app/",
         "image": "https://portfolio-tomas-misrahi.netlify.app/assets/img/foto-perfil-Tomas-Misrahi.png",
         "telephone": "+5491156180707",
@@ -93,30 +115,30 @@
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Servicios de Marketing",
+          "name": "Servicios de Marketing & Crecimiento",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Email Marketing & Automation",
-                "description": "Implementación de flujos automatizados en HubSpot, Mailchimp y prospección outbound con Apollo.io."
+                "name": "Soluciones & Automatización IA",
+                "description": "Plataformas operativas a medida e integración de modelos de IA (Claude, Gemini) para centralizar reportes y eliminar cuellos de botella."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Analítica Avanzada & Tracking",
-                "description": "Configuración técnica de GA4, GTM y dashboards personalizados en Looker Studio para visualización de KPIs."
+                "name": "Prospección B2B & Outbound Growth",
+                "description": "Bases de datos enriquecidas, dashboards interactivos y copywriting comercial asistido por IA para prospección en Cold Email y LinkedIn."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "SEO & CRO (Optimización de Conversión)",
-                "description": "Auditorías técnicas integrales, WPO y optimización de tasa de conversión para maximizar ventas."
+                "name": "Dashboards & Analítica Avanzada (Tracking)",
+                "description": "Configuración técnica de GA4, GTM y dashboards personalizados en Looker Studio para visibilidad total de KPIs de negocio."
               }
             },
             {
@@ -124,17 +146,79 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Performance Paid Media",
-                "description": "Gestión escalable y optimizada de campañas en Google Ads y Meta Ads orientadas al ROI."
+                "description": "Gestión escalable y optimizada de campañas en Google Ads y Meta Ads orientadas a maximizar el retorno de inversión (ROI)."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "SEO Técnico & CRO",
+                "description": "Auditorías técnicas exhaustivas, optimización de velocidad (WPO) y CRO para transformar tráfico web en conversiones efectivas."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Email Marketing & Automatización CRM",
+                "description": "Flujos automatizados de nutrición de prospectos e integración con plataformas CRM corporativas como HubSpot y Mailchimp."
               }
             }
           ]
         }
       },
       {
+        "@type": "FAQPage",
+        "@id": "https://portfolio-tomas-misrahi.netlify.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Quién es Tomas Misrahi y cuál es su especialidad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tomas Misrahi es un Especialista en Marketing Digital orientado a performance, optimización de canales de conversión (CRO), analítica avanzada y base Full-Stack. Ayuda a empresas a escalar sus canales de captación, centralizar tracking y desarrollar soluciones operativas con Inteligencia Artificial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué servicios de marketing ofrece Tomas Misrahi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tomas Misrahi ofrece 6 servicios principales: 1) Soluciones & Automatización IA, 2) Prospección B2B & Outbound Growth, 3) Dashboards & Analítica Avanzada (GA4, GTM, Looker Studio), 4) Performance Paid Media (Google Ads & Meta Ads), 5) SEO Técnico & CRO, y 6) Email Marketing & Automatización CRM (HubSpot, Mailchimp)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo aplica Tomas Misrahi la Inteligencia Artificial al marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Desarrolla herramientas operativas personalizadas aplicando modelos avanzados (Claude y Google Gemini) mediante Prompt Engineering: dashboards de reporting multicanal, templates interactivos de prospección comercial con CRM y cotizadores dinámicos de servicios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tomas Misrahi trabaja con clientes de forma remota a nivel internacional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, Tomas Misrahi trabaja de forma 100% remota con empresas, agencias y startups en Argentina, Latinoamérica, Estados Unidos y a nivel mundial (Worldwide)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuáles son algunos casos de éxito demostrables de Tomas Misrahi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Entre sus resultados auditados destacan: +180% de incremento en leads orgánicos mediante SEO multilingüe para J&J Group, +42% de incremento en tasa de conversión (CRO) y +30 landings diseñadas en Squads Ventures, y la automatización de +80 formularios corporativos y +40 campañas para Peterson Solutions."
+            }
+          }
+        ]
+      },
+      {
         "@type": "WebSite",
         "@id": "https://portfolio-tomas-misrahi.netlify.app/#website",
         "url": "https://portfolio-tomas-misrahi.netlify.app/",
-        "name": "Tomas Misrahi | Marketing Digital & Performance",
+        "name": "Tomas Misrahi | Especialista en Marketing Digital, Performance & CRO",
         "publisher": {
           "@id": "https://portfolio-tomas-misrahi.netlify.app/#person"
         },
@@ -204,8 +288,6 @@
       <div class="absolute inset-0 hero-gradient"></div>
       <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div class="order-2 lg:order-1">
-          <h2 class="font-label text-primary font-bold tracking-widest uppercase mb-4 text-sm">Estrategia &amp; Growth
-          </h2>
           <h1 class="font-headline text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 mt-8 md:mt-0 leading-[1.1]">
             Especialista en <br />
             <span
@@ -246,7 +328,7 @@
             <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
             <div
               class="relative w-64 h-64 sm:w-72 sm:h-72 md:w-[450px] md:h-[450px] overflow-hidden rounded-xl border border-primary/20 p-2 shadow-2xl shadow-primary/20 bg-surface-variant">
-              <img alt="Tomas Misrahi" class="w-full h-full object-cover rounded-lg block"
+              <img alt="Tomas Misrahi - Especialista en Marketing Digital, Performance &amp; CRO" class="w-full h-full object-cover rounded-lg block"
                 src="./assets/img/foto-perfil-Tomas-Misrahi.png" />
             </div>
           </div>
@@ -258,7 +340,7 @@
       <div class="max-w-7xl mx-auto px-8">
         <div class="flex flex-col md:flex-row gap-16">
           <div class="md:w-1/3">
-            <h3 class="font-headline text-4xl font-extrabold tracking-tight">Metodología Data-Driven</h3>
+            <h2 class="font-headline text-4xl font-extrabold tracking-tight">Metodología Data-Driven</h2>
           </div>
           <div class="md:w-2/3">
             <p class="text-xl md:text-2xl text-on-surface leading-snug mb-8">
@@ -268,12 +350,12 @@
             </p>
             <div class="grid md:grid-cols-2 gap-8 mt-12">
               <div class="space-y-4">
-                <h4 class="font-label text-primary font-bold uppercase tracking-widest text-xs">Visión Estratégica</h4>
+                <h3 class="font-label text-primary font-bold uppercase tracking-widest text-xs">Visión Estratégica</h3>
                 <p class="text-on-surface-variant">Análisis profundo del mercado y segmentación avanzada para impactar
                   al usuario correcto en el momento preciso.</p>
               </div>
               <div class="space-y-4">
-                <h4 class="font-label text-primary font-bold uppercase tracking-widest text-xs">Excelencia Técnica</h4>
+                <h3 class="font-label text-primary font-bold uppercase tracking-widest text-xs">Excelencia Técnica</h3>
                 <p class="text-on-surface-variant">Mi formación como Desarrollador Full-Stack me permite ir más allá del
                   marketing tradicional: ejecuto implementaciones de tracking avanzado, automatizaciones por código y
                   mejoras técnicas profundas para máxima velocidad y conversión.</p>
@@ -354,7 +436,7 @@
                   Peterson Solutions <span
                     class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
                 </a>
-                <p class="text-white font-semibold text-lg mt-1">Especialista en Marketing Digital</p>
+                <h3 class="text-white font-semibold text-lg mt-1">Especialista en Marketing Digital</h3>
                 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">May 2025 - Presente</p>
               </div>
               <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12 mt-4 md:mt-0">
@@ -388,7 +470,7 @@
                   class="inline-block font-label font-bold text-primary text-sm uppercase tracking-widest hover:text-white transition-colors">
                   Squads Ventures <span class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
                 </a>
-                <p class="text-white font-semibold text-lg mt-1">Especialista en WordPress</p>
+                <h3 class="text-white font-semibold text-lg mt-1">Especialista en WordPress</h3>
                 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">Nov 2024 - May 2025</p>
               </div>
             </div>
@@ -403,7 +485,7 @@
                   class="inline-block font-label font-bold text-primary text-sm uppercase tracking-widest hover:text-white transition-colors">
                   J&amp;J Group <span class="material-symbols-outlined text-[10px] align-baseline">open_in_new</span>
                 </a>
-                <p class="text-white font-semibold text-lg mt-1">Analista Digital y de Negocio</p>
+                <h3 class="text-white font-semibold text-lg mt-1">Analista Digital y de Negocio</h3>
                 <p class="text-on-surface-variant/60 text-xs font-bold uppercase mt-1">Nov 2023 - Nov 2024</p>
               </div>
               <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12 mt-4 md:mt-0">
@@ -495,10 +577,6 @@
       <div class="max-w-7xl mx-auto px-8">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
-            <div class="flex items-center gap-2 text-primary font-label text-xs font-bold tracking-widest uppercase mb-3">
-              <span class="material-symbols-outlined text-base">smart_toy</span>
-              Desarrollo &amp; Automatización IA
-            </div>
             <h2 class="font-headline text-4xl md:text-5xl font-black tracking-tighter leading-tight md:leading-none mb-4">
               Soluciones &amp; Herramientas IA
             </h2>
