@@ -104,6 +104,16 @@ contactForms.forEach(form => {
             body: new URLSearchParams(formData).toString()
         })
         .then(() => {
+            // Registrar conversión en Google Analytics 4 (GA4)
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', 'generate_lead', {
+                    event_category: 'Contacto',
+                    event_label: 'Envío Formulario Portfolio',
+                    form_name: form.getAttribute('name') || 'contacto',
+                    language: lang
+                });
+            }
+
             // Estado Final (Éxito)
             submitButton.innerHTML = `${textSuccess}`;
             submitButton.classList.replace('bg-primary', 'bg-green-600');
